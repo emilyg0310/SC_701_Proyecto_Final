@@ -11,48 +11,48 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CalculoMaterisController : ControllerBase
+    public class CantonController : ControllerBase
     {
         private readonly CalculoMateContext _context;
 
-        public CalculoMaterisController(CalculoMateContext context)
+        public CantonController(CalculoMateContext context)
         {
             _context = context;
         }
 
-        // GET: api/CalculoMateris
+        // GET: api/Cantons
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CalculoMateri>>> GetCalculoMateri()
+        public async Task<ActionResult<IEnumerable<Canton>>> GetCanton()
         {
-            return await _context.CalculoMateri.ToListAsync();
+            return await _context.Canton.ToListAsync();
         }
 
-        // GET: api/CalculoMateris/5
+        // GET: api/Cantons/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<CalculoMateri>> GetCalculoMateri(int id)
+        public async Task<ActionResult<Canton>> GetCanton(short id)
         {
-            var calculoMateri = await _context.CalculoMateri.FindAsync(id);
+            var canton = await _context.Canton.FindAsync(id);
 
-            if (calculoMateri == null)
+            if (canton == null)
             {
                 return NotFound();
             }
 
-            return calculoMateri;
+            return canton;
         }
 
-        // PUT: api/CalculoMateris/5
+        // PUT: api/Cantons/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCalculoMateri(int id, CalculoMateri calculoMateri)
+        public async Task<IActionResult> PutCanton(short id, Canton canton)
         {
-            if (id != calculoMateri.IdCalMateri)
+            if (id != canton.CodigoCanton)
             {
                 return BadRequest();
             }
 
-            _context.Entry(calculoMateri).State = EntityState.Modified;
+            _context.Entry(canton).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CalculoMateriExists(id))
+                if (!CantonExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/CalculoMateris
+        // POST: api/Cantons
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<CalculoMateri>> PostCalculoMateri(CalculoMateri calculoMateri)
+        public async Task<ActionResult<Canton>> PostCanton(Canton canton)
         {
-            _context.CalculoMateri.Add(calculoMateri);
+            _context.Canton.Add(canton);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCalculoMateri", new { id = calculoMateri.IdCalMateri }, calculoMateri);
+            return CreatedAtAction("GetCanton", new { id = canton.CodigoCanton }, canton);
         }
 
-        // DELETE: api/CalculoMateris/5
+        // DELETE: api/Cantons/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<CalculoMateri>> DeleteCalculoMateri(int id)
+        public async Task<ActionResult<Canton>> DeleteCanton(short id)
         {
-            var calculoMateri = await _context.CalculoMateri.FindAsync(id);
-            if (calculoMateri == null)
+            var canton = await _context.Canton.FindAsync(id);
+            if (canton == null)
             {
                 return NotFound();
             }
 
-            _context.CalculoMateri.Remove(calculoMateri);
+            _context.Canton.Remove(canton);
             await _context.SaveChangesAsync();
 
-            return calculoMateri;
+            return canton;
         }
 
-        private bool CalculoMateriExists(int id)
+        private bool CantonExists(short id)
         {
-            return _context.CalculoMateri.Any(e => e.IdCalMateri == id);
+            return _context.Canton.Any(e => e.CodigoCanton == id);
         }
     }
 }

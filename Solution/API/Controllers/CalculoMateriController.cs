@@ -11,48 +11,48 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProvinciasController : ControllerBase
+    public class CalculoMateriController : ControllerBase
     {
         private readonly CalculoMateContext _context;
 
-        public ProvinciasController(CalculoMateContext context)
+        public CalculoMateriController(CalculoMateContext context)
         {
             _context = context;
         }
 
-        // GET: api/Provincias
+        // GET: api/CalculoMateris
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Provincia>>> GetProvincia()
+        public async Task<ActionResult<IEnumerable<CalculoMateri>>> GetCalculoMateri()
         {
-            return await _context.Provincia.ToListAsync();
+            return await _context.CalculoMateri.ToListAsync();
         }
 
-        // GET: api/Provincias/5
+        // GET: api/CalculoMateris/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Provincia>> GetProvincia(short id)
+        public async Task<ActionResult<CalculoMateri>> GetCalculoMateri(int id)
         {
-            var provincia = await _context.Provincia.FindAsync(id);
+            var calculoMateri = await _context.CalculoMateri.FindAsync(id);
 
-            if (provincia == null)
+            if (calculoMateri == null)
             {
                 return NotFound();
             }
 
-            return provincia;
+            return calculoMateri;
         }
 
-        // PUT: api/Provincias/5
+        // PUT: api/CalculoMateris/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProvincia(short id, Provincia provincia)
+        public async Task<IActionResult> PutCalculoMateri(int id, CalculoMateri calculoMateri)
         {
-            if (id != provincia.CodigoProvincia)
+            if (id != calculoMateri.IdCalMateri)
             {
                 return BadRequest();
             }
 
-            _context.Entry(provincia).State = EntityState.Modified;
+            _context.Entry(calculoMateri).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ProvinciaExists(id))
+                if (!CalculoMateriExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/Provincias
+        // POST: api/CalculoMateris
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Provincia>> PostProvincia(Provincia provincia)
+        public async Task<ActionResult<CalculoMateri>> PostCalculoMateri(CalculoMateri calculoMateri)
         {
-            _context.Provincia.Add(provincia);
+            _context.CalculoMateri.Add(calculoMateri);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetProvincia", new { id = provincia.CodigoProvincia }, provincia);
+            return CreatedAtAction("GetCalculoMateri", new { id = calculoMateri.IdCalMateri }, calculoMateri);
         }
 
-        // DELETE: api/Provincias/5
+        // DELETE: api/CalculoMateris/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Provincia>> DeleteProvincia(short id)
+        public async Task<ActionResult<CalculoMateri>> DeleteCalculoMateri(int id)
         {
-            var provincia = await _context.Provincia.FindAsync(id);
-            if (provincia == null)
+            var calculoMateri = await _context.CalculoMateri.FindAsync(id);
+            if (calculoMateri == null)
             {
                 return NotFound();
             }
 
-            _context.Provincia.Remove(provincia);
+            _context.CalculoMateri.Remove(calculoMateri);
             await _context.SaveChangesAsync();
 
-            return provincia;
+            return calculoMateri;
         }
 
-        private bool ProvinciaExists(short id)
+        private bool CalculoMateriExists(int id)
         {
-            return _context.Provincia.Any(e => e.CodigoProvincia == id);
+            return _context.CalculoMateri.Any(e => e.IdCalMateri == id);
         }
     }
 }

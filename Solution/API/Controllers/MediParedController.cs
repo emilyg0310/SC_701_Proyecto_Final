@@ -11,11 +11,11 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MediParedsController : ControllerBase
+    public class MediParedController : ControllerBase
     {
         private readonly CalculoMateContext _context;
 
-        public MediParedsController(CalculoMateContext context)
+        public MediParedController(CalculoMateContext context)
         {
             _context = context;
         }

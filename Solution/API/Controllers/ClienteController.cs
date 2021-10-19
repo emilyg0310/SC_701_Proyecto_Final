@@ -11,48 +11,48 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonasController : ControllerBase
+    public class ClienteController : ControllerBase
     {
         private readonly CalculoMateContext _context;
 
-        public PersonasController(CalculoMateContext context)
+        public ClienteController(CalculoMateContext context)
         {
             _context = context;
         }
 
-        // GET: api/Personas
+        // GET: api/Clientes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Persona>>> GetPersona()
+        public async Task<ActionResult<IEnumerable<Cliente>>> GetCliente()
         {
-            return await _context.Persona.ToListAsync();
+            return await _context.Cliente.ToListAsync();
         }
 
-        // GET: api/Personas/5
+        // GET: api/Clientes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Persona>> GetPersona(int id)
+        public async Task<ActionResult<Cliente>> GetCliente(int id)
         {
-            var persona = await _context.Persona.FindAsync(id);
+            var cliente = await _context.Cliente.FindAsync(id);
 
-            if (persona == null)
+            if (cliente == null)
             {
                 return NotFound();
             }
 
-            return persona;
+            return cliente;
         }
 
-        // PUT: api/Personas/5
+        // PUT: api/Clientes/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPersona(int id, Persona persona)
+        public async Task<IActionResult> PutCliente(int id, Cliente cliente)
         {
-            if (id != persona.IdPer)
+            if (id != cliente.IdClie)
             {
                 return BadRequest();
             }
 
-            _context.Entry(persona).State = EntityState.Modified;
+            _context.Entry(cliente).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PersonaExists(id))
+                if (!ClienteExists(id))
                 {
                     return NotFound();
                 }
@@ -73,20 +73,20 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/Personas
+        // POST: api/Clientes
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Persona>> PostPersona(Persona persona)
+        public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
         {
-            _context.Persona.Add(persona);
+            _context.Cliente.Add(cliente);
             try
             {
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
             {
-                if (PersonaExists(persona.IdPer))
+                if (ClienteExists(cliente.IdClie))
                 {
                     return Conflict();
                 }
@@ -96,28 +96,28 @@ namespace API.Controllers
                 }
             }
 
-            return CreatedAtAction("GetPersona", new { id = persona.IdPer }, persona);
+            return CreatedAtAction("GetCliente", new { id = cliente.IdClie }, cliente);
         }
 
-        // DELETE: api/Personas/5
+        // DELETE: api/Clientes/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Persona>> DeletePersona(int id)
+        public async Task<ActionResult<Cliente>> DeleteCliente(int id)
         {
-            var persona = await _context.Persona.FindAsync(id);
-            if (persona == null)
+            var cliente = await _context.Cliente.FindAsync(id);
+            if (cliente == null)
             {
                 return NotFound();
             }
 
-            _context.Persona.Remove(persona);
+            _context.Cliente.Remove(cliente);
             await _context.SaveChangesAsync();
 
-            return persona;
+            return cliente;
         }
 
-        private bool PersonaExists(int id)
+        private bool ClienteExists(int id)
         {
-            return _context.Persona.Any(e => e.IdPer == id);
+            return _context.Cliente.Any(e => e.IdClie == id);
         }
     }
 }

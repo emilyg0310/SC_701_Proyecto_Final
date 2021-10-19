@@ -11,48 +11,48 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CantonsController : ControllerBase
+    public class ListCalController : ControllerBase
     {
         private readonly CalculoMateContext _context;
 
-        public CantonsController(CalculoMateContext context)
+        public ListCalController(CalculoMateContext context)
         {
             _context = context;
         }
 
-        // GET: api/Cantons
+        // GET: api/ListCals
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Canton>>> GetCanton()
+        public async Task<ActionResult<IEnumerable<ListCal>>> GetListCal()
         {
-            return await _context.Canton.ToListAsync();
+            return await _context.ListCal.ToListAsync();
         }
 
-        // GET: api/Cantons/5
+        // GET: api/ListCals/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Canton>> GetCanton(short id)
+        public async Task<ActionResult<ListCal>> GetListCal(int id)
         {
-            var canton = await _context.Canton.FindAsync(id);
+            var listCal = await _context.ListCal.FindAsync(id);
 
-            if (canton == null)
+            if (listCal == null)
             {
                 return NotFound();
             }
 
-            return canton;
+            return listCal;
         }
 
-        // PUT: api/Cantons/5
+        // PUT: api/ListCals/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCanton(short id, Canton canton)
+        public async Task<IActionResult> PutListCal(int id, ListCal listCal)
         {
-            if (id != canton.CodigoCanton)
+            if (id != listCal.IdCalculo)
             {
                 return BadRequest();
             }
 
-            _context.Entry(canton).State = EntityState.Modified;
+            _context.Entry(listCal).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CantonExists(id))
+                if (!ListCalExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/Cantons
+        // POST: api/ListCals
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Canton>> PostCanton(Canton canton)
+        public async Task<ActionResult<ListCal>> PostListCal(ListCal listCal)
         {
-            _context.Canton.Add(canton);
+            _context.ListCal.Add(listCal);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCanton", new { id = canton.CodigoCanton }, canton);
+            return CreatedAtAction("GetListCal", new { id = listCal.IdCalculo }, listCal);
         }
 
-        // DELETE: api/Cantons/5
+        // DELETE: api/ListCals/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Canton>> DeleteCanton(short id)
+        public async Task<ActionResult<ListCal>> DeleteListCal(int id)
         {
-            var canton = await _context.Canton.FindAsync(id);
-            if (canton == null)
+            var listCal = await _context.ListCal.FindAsync(id);
+            if (listCal == null)
             {
                 return NotFound();
             }
 
-            _context.Canton.Remove(canton);
+            _context.ListCal.Remove(listCal);
             await _context.SaveChangesAsync();
 
-            return canton;
+            return listCal;
         }
 
-        private bool CantonExists(short id)
+        private bool ListCalExists(int id)
         {
-            return _context.Canton.Any(e => e.CodigoCanton == id);
+            return _context.ListCal.Any(e => e.IdCalculo == id);
         }
     }
 }

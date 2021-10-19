@@ -11,48 +11,48 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ListCalsController : ControllerBase
+    public class ProvinciaController : ControllerBase
     {
         private readonly CalculoMateContext _context;
 
-        public ListCalsController(CalculoMateContext context)
+        public ProvinciaController(CalculoMateContext context)
         {
             _context = context;
         }
 
-        // GET: api/ListCals
+        // GET: api/Provincias
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ListCal>>> GetListCal()
+        public async Task<ActionResult<IEnumerable<Provincia>>> GetProvincia()
         {
-            return await _context.ListCal.ToListAsync();
+            return await _context.Provincia.ToListAsync();
         }
 
-        // GET: api/ListCals/5
+        // GET: api/Provincias/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ListCal>> GetListCal(int id)
+        public async Task<ActionResult<Provincia>> GetProvincia(short id)
         {
-            var listCal = await _context.ListCal.FindAsync(id);
+            var provincia = await _context.Provincia.FindAsync(id);
 
-            if (listCal == null)
+            if (provincia == null)
             {
                 return NotFound();
             }
 
-            return listCal;
+            return provincia;
         }
 
-        // PUT: api/ListCals/5
+        // PUT: api/Provincias/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutListCal(int id, ListCal listCal)
+        public async Task<IActionResult> PutProvincia(short id, Provincia provincia)
         {
-            if (id != listCal.IdCalculo)
+            if (id != provincia.CodigoProvincia)
             {
                 return BadRequest();
             }
 
-            _context.Entry(listCal).State = EntityState.Modified;
+            _context.Entry(provincia).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ListCalExists(id))
+                if (!ProvinciaExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/ListCals
+        // POST: api/Provincias
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<ListCal>> PostListCal(ListCal listCal)
+        public async Task<ActionResult<Provincia>> PostProvincia(Provincia provincia)
         {
-            _context.ListCal.Add(listCal);
+            _context.Provincia.Add(provincia);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetListCal", new { id = listCal.IdCalculo }, listCal);
+            return CreatedAtAction("GetProvincia", new { id = provincia.CodigoProvincia }, provincia);
         }
 
-        // DELETE: api/ListCals/5
+        // DELETE: api/Provincias/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<ListCal>> DeleteListCal(int id)
+        public async Task<ActionResult<Provincia>> DeleteProvincia(short id)
         {
-            var listCal = await _context.ListCal.FindAsync(id);
-            if (listCal == null)
+            var provincia = await _context.Provincia.FindAsync(id);
+            if (provincia == null)
             {
                 return NotFound();
             }
 
-            _context.ListCal.Remove(listCal);
+            _context.Provincia.Remove(provincia);
             await _context.SaveChangesAsync();
 
-            return listCal;
+            return provincia;
         }
 
-        private bool ListCalExists(int id)
+        private bool ProvinciaExists(short id)
         {
-            return _context.ListCal.Any(e => e.IdCalculo == id);
+            return _context.Provincia.Any(e => e.CodigoProvincia == id);
         }
     }
 }
