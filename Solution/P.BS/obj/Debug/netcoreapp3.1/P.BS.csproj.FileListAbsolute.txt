@@ -37,3 +37,15 @@ C:\Git\ProyectoFinal\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.csproj.CoreCompi
 C:\Git\ProyectoFinal\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.dll
 C:\Git\ProyectoFinal\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.pdb
 C:\Git\ProyectoFinal\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.genruntimeconfig.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.BS.deps.json
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.BS.runtimeconfig.json
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.BS.runtimeconfig.dev.json
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.BS.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.BS.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.csproj.AssemblyReference.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.AssemblyInfo.cs
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.genruntimeconfig.cache

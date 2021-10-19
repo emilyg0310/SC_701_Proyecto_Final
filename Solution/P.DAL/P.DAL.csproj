@@ -17,4 +17,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\P.DAL.DO\P.DAL.DO.csproj" />
+    <ProjectReference Include="..\P.DAL.Repository\P.DAL.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

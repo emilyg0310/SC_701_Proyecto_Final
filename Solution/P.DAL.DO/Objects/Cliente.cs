@@ -19,7 +19,7 @@ namespace P.DAL.DO.Objects
         public string Direccion { get; set; }
         public short CodigoCanton { get; set; }
 
-        public virtual Canton_cr CodigoCantonNavigation { get; set; }
+        public virtual Canton CodigoCantonNavigation { get; set; }
         public virtual ICollection<ListCal> ListCal { get; set; }
     }
 }

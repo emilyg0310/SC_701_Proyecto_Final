@@ -17,4 +17,4 @@ namespace P.DAL.DO.Objects
         public virtual ICollection<Canton> Canton { get; set; }
     }
 }
-}
+

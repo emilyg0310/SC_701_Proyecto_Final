@@ -1495,6 +1495,66 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "P.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.20",
+          "P.DAL.DO": "1.0.0",
+          "P.DAL.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/P.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P.DAL.dll": {}
+        }
+      },
+      "P.DAL.DO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.20"
+        },
+        "compile": {
+          "bin/placeholder/P.DAL.DO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P.DAL.DO.dll": {}
+        }
+      },
+      "P.DAL.EF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.20",
+          "P.DAL.DO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/P.DAL.EF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P.DAL.EF.dll": {}
+        }
+      },
+      "P.DAL.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.20",
+          "P.DAL.EF": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/P.DAL.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P.DAL.Repository.dll": {}
+        }
       }
     }
   },
@@ -5712,6 +5772,26 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "P.DAL/1.0.0": {
+      "type": "project",
+      "path": "../P.DAL/P.DAL.csproj",
+      "msbuildProject": "../P.DAL/P.DAL.csproj"
+    },
+    "P.DAL.DO/1.0.0": {
+      "type": "project",
+      "path": "../P.DAL.DO/P.DAL.DO.csproj",
+      "msbuildProject": "../P.DAL.DO/P.DAL.DO.csproj"
+    },
+    "P.DAL.EF/1.0.0": {
+      "type": "project",
+      "path": "../P.DAL.EF/P.DAL.EF.csproj",
+      "msbuildProject": "../P.DAL.EF/P.DAL.EF.csproj"
+    },
+    "P.DAL.Repository/1.0.0": {
+      "type": "project",
+      "path": "../P.DAL.Repository/P.DAL.Repository.csproj",
+      "msbuildProject": "../P.DAL.Repository/P.DAL.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5719,23 +5799,26 @@
       "Microsoft.EntityFrameworkCore >= 3.1.20",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.20",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.20"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.20",
+      "P.DAL >= 1.0.0",
+      "P.DAL.DO >= 1.0.0",
+      "P.DAL.EF >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emily\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\ProyectoFinal\\Solution\\P.BS\\P.BS.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj",
       "projectName": "P.BS",
-      "projectPath": "C:\\Git\\ProyectoFinal\\Solution\\P.BS\\P.BS.csproj",
-      "packagesPath": "C:\\Users\\emily\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\ProyectoFinal\\Solution\\P.BS\\obj\\",
+      "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\emily\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5748,7 +5831,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
+              "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
+            },
+            "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
+              "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj"
+            },
+            "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj": {
+              "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5797,7 +5890,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
