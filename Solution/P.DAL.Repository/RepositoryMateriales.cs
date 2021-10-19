@@ -7,11 +7,11 @@ using P.DAL.EF;
 
 namespace P.DAL.Repository
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class RepositoryMateriales<T> : IRepositoryMateriales<T> where T : class
     {
         protected readonly CalculoMateContext dbContext;
 
-        public Repository(CalculoMateContext _dbContext)
+        public RepositoryMateriales(CalculoMateContext _dbContext)
         {
             dbContext = _dbContext;
         }

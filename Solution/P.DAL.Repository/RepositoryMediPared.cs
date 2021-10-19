@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace P.DAL.Repository
 {
-    public class RepositoryMediPared : Repository<data.MediPared>, IRepositoryMediPared
+    public class RepositoryMediPared : RepositoryMediParedes<data.MediPared>, IRepositoryMediPared
     {
         public RepositoryMediPared(CalculoMateContext _dbContext) : base(_dbContext)
         {
@@ -18,14 +18,14 @@ namespace P.DAL.Repository
         public async Task<IEnumerable<MediPared>> GetAllAsync()
         {
             return await _db.MediPared
-                .Include(m => m.IdMedParedesNavigation)
+                .Include(m => m.IdMedParedes)
                 .ToListAsync();
         }
 
         public async Task<MediPared> GetOneByIdAsync(int id)
         {
             return await _db.MediPared
-               .Include(m => m.IdMedParedesNavigation)
+               .Include(m => m.IdMedParedes)
                .SingleAsync(m => m.IdMedPared == id);
         }
 

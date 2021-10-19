@@ -6,7 +6,7 @@ using System.Text;
 
 namespace P.DAL.Repository
 {
-    public interface IRepository<T> where T : class
+    public interface IRepositoryProvincia<T> where T : class
     {
         IQueryable<T> AsQueryble();
         IEnumerable<T> GetAll();
