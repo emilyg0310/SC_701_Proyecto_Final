@@ -24,3 +24,16 @@ C:\Git\Proyecto_Final\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.csproj.
 C:\Git\Proyecto_Final\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.dll
 C:\Git\Proyecto_Final\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.pdb
 C:\Git\Proyecto_Final\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.genruntimeconfig.cache
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.deps.json
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.runtimeconfig.json
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.runtimeconfig.dev.json
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.csproj.AssemblyReference.cache
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.AssemblyInfoInputs.cache
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.AssemblyInfo.cs
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.csproj.CoreCompileInputs.cache
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.genruntimeconfig.cache

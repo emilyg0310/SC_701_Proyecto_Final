@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.API\\P.API.csproj": {}
+    "C:\\Git\\ProyectoFinal\\Solution\\P.API\\P.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.API\\P.API.csproj": {
+    "C:\\Git\\ProyectoFinal\\Solution\\P.API\\P.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.API\\P.API.csproj",
+        "projectUniqueName": "C:\\Git\\ProyectoFinal\\Solution\\P.API\\P.API.csproj",
         "projectName": "P.API",
-        "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.API\\P.API.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.API\\obj\\",
+        "projectPath": "C:\\Git\\ProyectoFinal\\Solution\\P.API\\P.API.csproj",
+        "packagesPath": "C:\\Users\\emily\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\ProyectoFinal\\Solution\\P.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emily\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,12 +71,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.18, 3.1.18]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -85,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
