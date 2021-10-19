@@ -1,0 +1,13 @@
+C:\gits\prograavnaza\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.deps.json
+C:\gits\prograavnaza\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.runtimeconfig.json
+C:\gits\prograavnaza\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.runtimeconfig.dev.json
+C:\gits\prograavnaza\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\gits\prograavnaza\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.csproj.AssemblyReference.cache
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.AssemblyInfoInputs.cache
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.AssemblyInfo.cs
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.csproj.CoreCompileInputs.cache
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.genruntimeconfig.cache
