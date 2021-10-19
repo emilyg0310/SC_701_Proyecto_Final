@@ -8,13 +8,13 @@ namespace P.DAL.DO.Objects
     {
         public Provincia()
         {
-            CantonCr = new HashSet<CantonCr>();
+            Canton = new HashSet<Canton>();
         }
 
         public short CodigoProvincia { get; set; }
         public string NombreProvincia { get; set; }
 
-        public virtual ICollection<Canton> CantonCr { get; set; }
+        public virtual ICollection<Canton> Canton { get; set; }
     }
 }
 }

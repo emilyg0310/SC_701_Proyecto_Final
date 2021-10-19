@@ -1495,6 +1495,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "P.DAL.DO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.20"
+        },
+        "compile": {
+          "bin/placeholder/P.DAL.DO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P.DAL.DO.dll": {}
+        }
       }
     }
   },
@@ -5712,6 +5726,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "P.DAL.DO/1.0.0": {
+      "type": "project",
+      "path": "../P.DAL.DO/P.DAL.DO.csproj",
+      "msbuildProject": "../P.DAL.DO/P.DAL.DO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5719,7 +5738,8 @@
       "Microsoft.EntityFrameworkCore >= 3.1.20",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.20",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.20"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.20",
+      "P.DAL.DO >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5748,7 +5768,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Git\\ProyectoFinal\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
+              "projectPath": "C:\\Git\\ProyectoFinal\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
