@@ -5723,19 +5723,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emily\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\ProyectoFinal\\Solution\\P.BS\\P.BS.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj",
       "projectName": "P.BS",
-      "projectPath": "C:\\Git\\ProyectoFinal\\Solution\\P.BS\\P.BS.csproj",
-      "packagesPath": "C:\\Users\\emily\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\ProyectoFinal\\Solution\\P.BS\\obj\\",
+      "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\emily\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5797,7 +5797,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
