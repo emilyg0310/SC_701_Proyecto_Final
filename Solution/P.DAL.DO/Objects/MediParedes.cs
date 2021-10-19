@@ -8,7 +8,7 @@ namespace P.DAL.DO.Objects
     {
         public MediParedes()
         {
-            CalculoMateri = new HashSet<CalculoMateri>();
+            //CalculoMateri = new HashSet<CalculoMateri>();
             MediPared = new HashSet<MediPared>();
         }
 
@@ -17,7 +17,7 @@ namespace P.DAL.DO.Objects
         public decimal TotalAncho { get; set; }
         public decimal TotalMetroCuadrado { get; set; }
 
-        public virtual ICollection<CalculoMateri> CalculoMateri { get; set; }
+        //public virtual ICollection<CalculoMateri> CalculoMateri { get; set; }
         public virtual ICollection<MediPared> MediPared { get; set; }
     }
 }
