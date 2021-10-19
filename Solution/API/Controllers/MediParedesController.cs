@@ -13,9 +13,9 @@ namespace API.Controllers
     [ApiController]
     public class MediParedesController : ControllerBase
     {
-        private readonly calcuMateriContext _context;
+        private readonly CalculoMateContext _context;
 
-        public MediParedesController(calcuMateriContext context)
+        public MediParedesController(CalculoMateContext context)
         {
             _context = context;
         }

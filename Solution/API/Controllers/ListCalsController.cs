@@ -13,9 +13,9 @@ namespace API.Controllers
     [ApiController]
     public class ListCalsController : ControllerBase
     {
-        private readonly calcuMateriContext _context;
+        private readonly CalculoMateContext _context;
 
-        public ListCalsController(calcuMateriContext context)
+        public ListCalsController(CalculoMateContext context)
         {
             _context = context;
         }

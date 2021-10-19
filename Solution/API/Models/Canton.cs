@@ -7,9 +7,9 @@ using System.Collections.Generic;
 
 namespace API.Models
 {
-    public partial class CantonCr
+    public partial class Canton
     {
-        public CantonCr()
+        public Canton()
         {
             Cliente = new HashSet<Cliente>();
         }
@@ -18,7 +18,7 @@ namespace API.Models
         public short CodigoProvincia { get; set; }
         public string NombreCanton { get; set; }
 
-        public virtual ProvinciaCr CodigoProvinciaNavigation { get; set; }
+        public virtual Provincia CodigoProvinciaNavigation { get; set; }
         public virtual ICollection<Cliente> Cliente { get; set; }
     }
 }

@@ -13,9 +13,9 @@ namespace API.Controllers
     [ApiController]
     public class ClientesController : ControllerBase
     {
-        private readonly calcuMateriContext _context;
+        private readonly CalculoMateContext _context;
 
-        public ClientesController(calcuMateriContext context)
+        public ClientesController(CalculoMateContext context)
         {
             _context = context;
         }

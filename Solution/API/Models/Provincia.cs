@@ -7,16 +7,16 @@ using System.Collections.Generic;
 
 namespace API.Models
 {
-    public partial class ProvinciaCr
+    public partial class Provincia
     {
-        public ProvinciaCr()
+        public Provincia()
         {
-            CantonCr = new HashSet<CantonCr>();
+            Canton = new HashSet<Canton>();
         }
 
         public short CodigoProvincia { get; set; }
         public string NombreProvincia { get; set; }
 
-        public virtual ICollection<CantonCr> CantonCr { get; set; }
+        public virtual ICollection<Canton> Canton { get; set; }
     }
 }

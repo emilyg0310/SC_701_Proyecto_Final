@@ -13,9 +13,9 @@ namespace API.Controllers
     [ApiController]
     public class MaterialesController : ControllerBase
     {
-        private readonly calcuMateriContext _context;
+        private readonly CalculoMateContext _context;
 
-        public MaterialesController(calcuMateriContext context)
+        public MaterialesController(CalculoMateContext context)
         {
             _context = context;
         }

@@ -22,7 +22,7 @@ namespace API.Models
         public string Direccion { get; set; }
         public short CodigoCanton { get; set; }
 
-        public virtual CantonCr CodigoCantonNavigation { get; set; }
+        public virtual Canton CodigoCantonNavigation { get; set; }
         public virtual ICollection<ListCal> ListCal { get; set; }
     }
 }

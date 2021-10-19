@@ -11,48 +11,48 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CantonCrsController : ControllerBase
+    public class CantonsController : ControllerBase
     {
-        private readonly calcuMateriContext _context;
+        private readonly CalculoMateContext _context;
 
-        public CantonCrsController(calcuMateriContext context)
+        public CantonsController(CalculoMateContext context)
         {
             _context = context;
         }
 
-        // GET: api/CantonCrs
+        // GET: api/Cantons
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CantonCr>>> GetCantonCr()
+        public async Task<ActionResult<IEnumerable<Canton>>> GetCanton()
         {
-            return await _context.CantonCr.ToListAsync();
+            return await _context.Canton.ToListAsync();
         }
 
-        // GET: api/CantonCrs/5
+        // GET: api/Cantons/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<CantonCr>> GetCantonCr(short id)
+        public async Task<ActionResult<Canton>> GetCanton(short id)
         {
-            var cantonCr = await _context.CantonCr.FindAsync(id);
+            var canton = await _context.Canton.FindAsync(id);
 
-            if (cantonCr == null)
+            if (canton == null)
             {
                 return NotFound();
             }
 
-            return cantonCr;
+            return canton;
         }
 
-        // PUT: api/CantonCrs/5
+        // PUT: api/Cantons/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCantonCr(short id, CantonCr cantonCr)
+        public async Task<IActionResult> PutCanton(short id, Canton canton)
         {
-            if (id != cantonCr.CodigoCanton)
+            if (id != canton.CodigoCanton)
             {
                 return BadRequest();
             }
 
-            _context.Entry(cantonCr).State = EntityState.Modified;
+            _context.Entry(canton).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CantonCrExists(id))
+                if (!CantonExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/CantonCrs
+        // POST: api/Cantons
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<CantonCr>> PostCantonCr(CantonCr cantonCr)
+        public async Task<ActionResult<Canton>> PostCanton(Canton canton)
         {
-            _context.CantonCr.Add(cantonCr);
+            _context.Canton.Add(canton);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCantonCr", new { id = cantonCr.CodigoCanton }, cantonCr);
+            return CreatedAtAction("GetCanton", new { id = canton.CodigoCanton }, canton);
         }
 
-        // DELETE: api/CantonCrs/5
+        // DELETE: api/Cantons/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<CantonCr>> DeleteCantonCr(short id)
+        public async Task<ActionResult<Canton>> DeleteCanton(short id)
         {
-            var cantonCr = await _context.CantonCr.FindAsync(id);
-            if (cantonCr == null)
+            var canton = await _context.Canton.FindAsync(id);
+            if (canton == null)
             {
                 return NotFound();
             }
 
-            _context.CantonCr.Remove(cantonCr);
+            _context.Canton.Remove(canton);
             await _context.SaveChangesAsync();
 
-            return cantonCr;
+            return canton;
         }
 
-        private bool CantonCrExists(short id)
+        private bool CantonExists(short id)
         {
-            return _context.CantonCr.Any(e => e.CodigoCanton == id);
+            return _context.Canton.Any(e => e.CodigoCanton == id);
         }
     }
 }

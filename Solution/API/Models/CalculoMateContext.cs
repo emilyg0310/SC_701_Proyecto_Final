@@ -8,33 +8,33 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace API.Models
 {
-    public partial class calcuMateriContext : DbContext
+    public partial class CalculoMateContext : DbContext
     {
-        public calcuMateriContext()
+        public CalculoMateContext()
         {
         }
 
-        public calcuMateriContext(DbContextOptions<calcuMateriContext> options)
+        public CalculoMateContext(DbContextOptions<CalculoMateContext> options)
             : base(options)
         {
         }
 
         public virtual DbSet<CalculoMateri> CalculoMateri { get; set; }
-        public virtual DbSet<CantonCr> CantonCr { get; set; }
+        public virtual DbSet<Canton> Canton { get; set; }
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<ListCal> ListCal { get; set; }
         public virtual DbSet<Materiales> Materiales { get; set; }
         public virtual DbSet<MediPared> MediPared { get; set; }
         public virtual DbSet<MediParedes> MediParedes { get; set; }
         public virtual DbSet<Persona> Persona { get; set; }
-        public virtual DbSet<ProvinciaCr> ProvinciaCr { get; set; }
+        public virtual DbSet<Provincia> Provincia { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server= LAPTOP-O3MKNJ0N\\SQLEXPRESS;Database=calcuMateri;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server= LAPTOP-J2BQB9NL\\DEVE;Database=CalculoMate;Trusted_Connection=True;");
             }
         }
 
@@ -43,7 +43,7 @@ namespace API.Models
             modelBuilder.Entity<CalculoMateri>(entity =>
             {
                 entity.HasKey(e => e.IdCalMateri)
-                    .HasName("PK__CalculoM__52C73114E5A14754");
+                    .HasName("PK__CalculoM__52C731141A10DE06");
 
                 entity.Property(e => e.IdCalMateri).HasColumnName("idCalMateri");
 
@@ -72,12 +72,10 @@ namespace API.Models
                     .HasConstraintName("FK_idMedParedess");
             });
 
-            modelBuilder.Entity<CantonCr>(entity =>
+            modelBuilder.Entity<Canton>(entity =>
             {
                 entity.HasKey(e => e.CodigoCanton)
-                    .HasName("PK__canton_c__45E861BDC4891E39");
-
-                entity.ToTable("canton_cr");
+                    .HasName("PK__Canton__45E861BD279A37E8");
 
                 entity.Property(e => e.CodigoCanton).HasColumnName("codigo_canton");
 
@@ -90,7 +88,7 @@ namespace API.Models
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.CodigoProvinciaNavigation)
-                    .WithMany(p => p.CantonCr)
+                    .WithMany(p => p.Canton)
                     .HasForeignKey(d => d.CodigoProvincia)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_CANTON_PROVINCIA");
@@ -99,7 +97,7 @@ namespace API.Models
             modelBuilder.Entity<Cliente>(entity =>
             {
                 entity.HasKey(e => e.IdClie)
-                    .HasName("PK__Cliente__3766D4989AC0C90C");
+                    .HasName("PK__Cliente__3766D498FB32F7D4");
 
                 entity.Property(e => e.IdClie).ValueGeneratedNever();
 
@@ -144,9 +142,7 @@ namespace API.Models
             modelBuilder.Entity<ListCal>(entity =>
             {
                 entity.HasKey(e => e.IdCalculo)
-                    .HasName("PK__listCal__77CAC7080005A9C5");
-
-                entity.ToTable("listCal");
+                    .HasName("PK__ListCal__77CAC70885074D1F");
 
                 entity.Property(e => e.IdCalculo).HasColumnName("idCalculo");
 
@@ -172,7 +168,7 @@ namespace API.Models
             modelBuilder.Entity<Materiales>(entity =>
             {
                 entity.HasKey(e => e.IdMaterial)
-                    .HasName("PK__Material__6AC7E3EB6277A23B");
+                    .HasName("PK__Material__6AC7E3EBEE55A131");
 
                 entity.Property(e => e.IdMaterial).HasColumnName("idMaterial");
 
@@ -188,9 +184,7 @@ namespace API.Models
             modelBuilder.Entity<MediPared>(entity =>
             {
                 entity.HasKey(e => e.IdMedPared)
-                    .HasName("PK__mediPare__22C19CF982B1F810");
-
-                entity.ToTable("mediPared");
+                    .HasName("PK__MediPare__22C19CF914D73047");
 
                 entity.Property(e => e.IdMedPared).HasColumnName("idMedPared");
 
@@ -212,9 +206,7 @@ namespace API.Models
             modelBuilder.Entity<MediParedes>(entity =>
             {
                 entity.HasKey(e => e.IdMedParedes)
-                    .HasName("PK__mediPare__08EAE033D5673770");
-
-                entity.ToTable("mediParedes");
+                    .HasName("PK__MediPare__08EAE0338E48344E");
 
                 entity.Property(e => e.IdMedParedes).HasColumnName("idMedParedes");
 
@@ -234,7 +226,7 @@ namespace API.Models
             modelBuilder.Entity<Persona>(entity =>
             {
                 entity.HasKey(e => e.IdPer)
-                    .HasName("PK__Persona__2ACE59B5711DEBE6");
+                    .HasName("PK__Persona__2ACE59B5BAD85C1C");
 
                 entity.Property(e => e.IdPer).ValueGeneratedNever();
 
@@ -274,12 +266,10 @@ namespace API.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<ProvinciaCr>(entity =>
+            modelBuilder.Entity<Provincia>(entity =>
             {
                 entity.HasKey(e => e.CodigoProvincia)
-                    .HasName("PK__provinci__265D811CC0198C03");
-
-                entity.ToTable("provincia_cr");
+                    .HasName("PK__Provinci__265D811C66E3AC21");
 
                 entity.Property(e => e.CodigoProvincia).HasColumnName("codigo_provincia");
 
