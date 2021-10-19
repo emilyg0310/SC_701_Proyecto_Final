@@ -24,10 +24,3 @@ C:\Git\Proyecto_Final\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.csproj.
 C:\Git\Proyecto_Final\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.dll
 C:\Git\Proyecto_Final\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.pdb
 C:\Git\Proyecto_Final\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.genruntimeconfig.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.csproj.AssemblyReference.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.GeneratedMSBuildEditorConfig.editorconfig
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.AssemblyInfoInputs.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.AssemblyInfo.cs
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.csproj.CoreCompileInputs.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.dll
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.pdb

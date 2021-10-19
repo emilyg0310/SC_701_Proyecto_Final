@@ -24,16 +24,3 @@ C:\Git\Proyecto_Final\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Re
 C:\Git\Proyecto_Final\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.dll
 C:\Git\Proyecto_Final\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.pdb
 C:\Git\Proyecto_Final\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.genruntimeconfig.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.Repository.deps.json
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.Repository.runtimeconfig.json
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.Repository.runtimeconfig.dev.json
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.Repository.dll
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.Repository.pdb
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.csproj.AssemblyReference.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.GeneratedMSBuildEditorConfig.editorconfig
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.AssemblyInfoInputs.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.AssemblyInfo.cs
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.csproj.CoreCompileInputs.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.dll
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.pdb
-C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.genruntimeconfig.cache
