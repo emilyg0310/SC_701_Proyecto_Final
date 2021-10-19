@@ -5723,19 +5723,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\emily\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj",
+      "projectUniqueName": "C:\\Git\\ProyectoFinal\\Solution\\P.DAL\\P.DAL.csproj",
       "projectName": "P.DAL",
-      "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\obj\\",
+      "projectPath": "C:\\Git\\ProyectoFinal\\Solution\\P.DAL\\P.DAL.csproj",
+      "packagesPath": "C:\\Users\\emily\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\ProyectoFinal\\Solution\\P.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\emily\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5797,7 +5797,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
