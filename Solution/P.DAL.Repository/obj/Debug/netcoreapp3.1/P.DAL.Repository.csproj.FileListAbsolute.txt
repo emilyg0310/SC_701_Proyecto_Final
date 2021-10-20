@@ -54,3 +54,8 @@ C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.Repository\obj\Debu
 C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.dll
 C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.pdb
 C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.genruntimeconfig.cache
+C:\gits\prograavnaza\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\gits\prograavnaza\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\gits\prograavnaza\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\gits\prograavnaza\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\gits\prograavnaza\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.csproj.CopyComplete

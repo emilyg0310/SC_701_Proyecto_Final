@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.20">
       <PrivateAssets>all</PrivateAssets>
@@ -19,6 +20,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\P.BS\P.BS.csproj" />
+    <ProjectReference Include="..\P.DAL.EF\P.DAL.EF.csproj" />
   </ItemGroup>
 
 
