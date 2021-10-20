@@ -245,3 +245,5 @@ C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.API\obj\Debug\netcoreap
 C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.pdb
 C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.genruntimeconfig.cache
 C:\gits\prograavnaza\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.csproj.AssemblyReference.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.MvcApplicationPartsAssemblyInfo.cs

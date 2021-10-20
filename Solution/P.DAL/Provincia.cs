@@ -9,11 +9,11 @@ namespace P.DAL
 {
     public class Provincia : ICRUD<data.Provincia>
     {
-        private RepositoryProvincia repo;
+        private RepositoryProvincia<data.Provincia> repo;
 
         public Provincia(CalculoMateContext _Db)
         {
-            repo = new RepositoryProvincia(_Db);
+            repo = new RepositoryProvincia<data.Provincia>(_Db);
         }
         public void Delete(data.Provincia t)
         {

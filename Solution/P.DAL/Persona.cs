@@ -9,11 +9,11 @@ namespace P.DAL
 {
     public class Persona : ICRUD<data.Persona>
     {
-        private RepositoryPersona repo;
+        private RepositoryPersona<data.Persona> repo;
 
         public Persona(CalculoMateContext _Db)
         {
-            repo = new RepositoryPersona(_Db);
+            repo = new RepositoryPersona<data.Persona>(_Db);
         }
         public void Delete(data.Persona t)
         {

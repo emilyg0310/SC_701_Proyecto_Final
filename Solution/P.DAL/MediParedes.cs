@@ -9,11 +9,11 @@ namespace P.DAL
 {
     public class MediParedes : ICRUD<data.MediParedes>
     {
-        private RepositoryMediParedes repo;
+        private RepositoryMediParedes<data.MediParedes> repo;
 
         public MediParedes(CalculoMateContext _Db)
         {
-            repo = new RepositoryMediParedes(_Db);
+            repo = new RepositoryMediParedes<data.MediParedes>(_Db);
         }
         public void Delete(data.MediParedes t)
         {
