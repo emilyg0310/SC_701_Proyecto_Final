@@ -59,3 +59,8 @@ C:\gits\prograavnaza\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.EF.
 C:\gits\prograavnaza\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
 C:\gits\prograavnaza\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
 C:\gits\prograavnaza\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.csproj.CopyComplete
+C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL.Repository\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL.Repository\obj\Debug\netcoreapp3.1\P.DAL.Repository.csproj.CopyComplete

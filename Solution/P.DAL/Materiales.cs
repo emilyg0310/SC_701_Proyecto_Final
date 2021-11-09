@@ -9,12 +9,12 @@ namespace P.DAL
 {
     public class Materiales : ICRUD<data.Materiales>
     {
-        private RepositoryMateriales<data.Materiales> repo;
+        private Repository<data.Materiales> repo;
 
 
         public Materiales(CalculoMateContext _Db)
         {
-            repo = new RepositoryMateriales<data.Materiales>(_Db);
+            repo = new Repository<data.Materiales>(_Db);
         }
         public void Delete(data.Materiales t)
         {

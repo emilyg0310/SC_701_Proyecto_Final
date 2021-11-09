@@ -6,7 +6,7 @@ using data = P.DAL.DO.Objects;
 
 namespace P.DAL.Repository
 {
-    public interface IRepositoryCanton : IRepositoryProvincia<data.Canton>
+    public interface IRepositoryCanton : IRepository<data.Canton>
     {
         Task<IEnumerable<data.Canton>> GetAllAsync();
         Task<data.Canton> GetOneByIdAsync(int id);

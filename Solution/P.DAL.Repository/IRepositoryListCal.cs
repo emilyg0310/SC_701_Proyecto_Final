@@ -6,7 +6,7 @@ using data = P.DAL.DO.Objects;
 
 namespace P.DAL.Repository
 {
-    public interface IRepositoryListCal : IRepositoryPersona<data.ListCal>
+    public interface IRepositoryListCal : IRepository<data.ListCal>
     {
         Task<IEnumerable<data.ListCal>> GetAllAsync();
         Task<data.ListCal> GetOneByIdAsync(int id);

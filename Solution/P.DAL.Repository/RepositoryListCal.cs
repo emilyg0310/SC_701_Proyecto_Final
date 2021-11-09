@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace P.DAL.Repository
 {
-    public class RepositoryListCal : RepositoryPersona<data.ListCal>, IRepositoryListCal
+    public class RepositoryListCal : Repository<data.ListCal>, IRepositoryListCal
     {
         public RepositoryListCal(CalculoMateContext _dbContext) : base(_dbContext)
         {

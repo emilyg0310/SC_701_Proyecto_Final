@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace P.DAL.Repository
 {
-    public interface IRepositoryProvincia<T> where T : class
+    public interface IRepository<T> where T : class
     {
         IQueryable<T> AsQueryble();
         IEnumerable<T> GetAll();

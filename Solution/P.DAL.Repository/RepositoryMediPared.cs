@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace P.DAL.Repository
 {
-    public class RepositoryMediPared : RepositoryMediParedes<data.MediPared>, IRepositoryMediPared
+    public class RepositoryMediPared : Repository<data.MediPared>, IRepositoryMediPared
     {
         public RepositoryMediPared(CalculoMateContext _dbContext) : base(_dbContext)
         {

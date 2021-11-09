@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace P.DAL.Repository
 {
-    public class RepositoryCliente : RepositoryProvincia<data.Cliente>, IRepositoryCliente
+    public class RepositoryCliente : Repository<data.Cliente>, IRepositoryCliente
     {
         public RepositoryCliente(CalculoMateContext _dbContext) : base(_dbContext)
         {

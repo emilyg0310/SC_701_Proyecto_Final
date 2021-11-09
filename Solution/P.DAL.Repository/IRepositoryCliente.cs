@@ -6,7 +6,7 @@ using data = P.DAL.DO.Objects;
 
 namespace P.DAL.Repository
 {
-    public interface IRepositoryCliente : IRepositoryProvincia<data.Cliente>
+    public interface IRepositoryCliente : IRepository<data.Cliente>
     {
         Task<IEnumerable<data.Cliente>> GetAllAsync();
         Task<data.Cliente> GetOneByIdAsync(int id);

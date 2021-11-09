@@ -49,3 +49,12 @@ C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Debug\netcor
 C:\gits\prograavnaza\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
 C:\gits\prograavnaza\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
 C:\gits\prograavnaza\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.csproj.CopyComplete
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.deps.json
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.runtimeconfig.json
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.runtimeconfig.dev.json
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.csproj.CopyComplete
+C:\Git\ProyectoFinal\Solution\P.DAL.EF\obj\Debug\netcoreapp3.1\P.DAL.EF.genruntimeconfig.cache

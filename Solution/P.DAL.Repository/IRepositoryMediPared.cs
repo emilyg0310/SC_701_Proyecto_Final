@@ -6,7 +6,7 @@ using data = P.DAL.DO.Objects;
 
 namespace P.DAL.Repository
 {
-    public interface IRepositoryMediPared : IRepositoryMediParedes<data.MediPared>
+    public interface IRepositoryMediPared : IRepository<data.MediPared>
     {
         Task<IEnumerable<data.MediPared>> GetAllAsync();
         Task<data.MediPared> GetOneByIdAsync(int id);
