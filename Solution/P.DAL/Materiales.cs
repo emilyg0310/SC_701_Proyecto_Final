@@ -29,7 +29,7 @@ namespace P.DAL
 
         public Task<IEnumerable<data.Materiales>> GetAllAsync()
         {
-            return repo.GetAllAsync();
+            return null;
         }
 
         public data.Materiales GetOneById(int id)
@@ -39,7 +39,7 @@ namespace P.DAL
 
         public Task<data.Materiales> GetOneByIdAsync(int id)
         {
-            return repo.GetOneByIdAsync(id);
+            return null;
         }
 
         public void Insert(data.Materiales t)

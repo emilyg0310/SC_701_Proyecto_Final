@@ -9,11 +9,11 @@ namespace P.DAL
 {
     public class Persona : ICRUD<data.Persona>
     {
-        private RepositoryPersona<data.Persona> repo;
+        private Repository<data.Persona> repo;
 
         public Persona(CalculoMateContext _Db)
         {
-            repo = new RepositoryPersona<data.Persona>(_Db);
+            repo = new Repository<data.Persona>(_Db);
         }
         public void Delete(data.Persona t)
         {
@@ -28,7 +28,7 @@ namespace P.DAL
 
         public Task<IEnumerable<data.Persona>> GetAllAsync()
         {
-            return repo.GetAllAsync();
+            return null;
         }
 
         public data.Persona GetOneById(int id)
@@ -38,7 +38,7 @@ namespace P.DAL
 
         public Task<data.Persona> GetOneByIdAsync(int id)
         {
-            return repo.GetOneByIdAsync(id);
+            return null;
         }
 
         public void Insert(data.Persona t)

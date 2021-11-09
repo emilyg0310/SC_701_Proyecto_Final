@@ -9,11 +9,11 @@ namespace P.DAL
 {
     public class Provincia : ICRUD<data.Provincia>
     {
-        private RepositoryProvincia<data.Provincia> repo;
+        private Repository<data.Provincia> repo;
 
         public Provincia(CalculoMateContext _Db)
         {
-            repo = new RepositoryProvincia<data.Provincia>(_Db);
+            repo = new Repository<data.Provincia>(_Db);
         }
         public void Delete(data.Provincia t)
         {
@@ -28,7 +28,7 @@ namespace P.DAL
 
         public Task<IEnumerable<data.Provincia>> GetAllAsync()
         {
-            return repo.GetAllAsync();
+            return null;
         }
 
         public data.Provincia GetOneById(int id)
@@ -38,7 +38,7 @@ namespace P.DAL
 
         public Task<data.Provincia> GetOneByIdAsync(int id)
         {
-            return repo.GetOneByIdAsync(id);
+            return null;
         }
 
         public void Insert(data.Provincia t)

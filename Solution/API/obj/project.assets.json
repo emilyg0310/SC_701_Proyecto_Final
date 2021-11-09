@@ -8673,19 +8673,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emily\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\ProyectoFinal\\Solution\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Git\\ProyectoFinal\\Solution\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\emily\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\ProyectoFinal\\Solution\\API\\obj\\",
+      "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\emily\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8750,6 +8750,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.18, 3.1.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8758,7 +8764,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

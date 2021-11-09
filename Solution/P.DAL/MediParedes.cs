@@ -9,11 +9,11 @@ namespace P.DAL
 {
     public class MediParedes : ICRUD<data.MediParedes>
     {
-        private RepositoryMediParedes<data.MediParedes> repo;
+        private Repository<data.MediParedes> repo;
 
         public MediParedes(CalculoMateContext _Db)
         {
-            repo = new RepositoryMediParedes<data.MediParedes>(_Db);
+            repo = new Repository<data.MediParedes>(_Db);
         }
         public void Delete(data.MediParedes t)
         {
@@ -28,7 +28,7 @@ namespace P.DAL
 
         public Task<IEnumerable<data.MediParedes>> GetAllAsync()
         {
-            return repo.GetAllAsync();
+            return null;
         }
 
         public data.MediParedes GetOneById(int id)
@@ -38,7 +38,7 @@ namespace P.DAL
 
         public Task<data.MediParedes> GetOneByIdAsync(int id)
         {
-            return repo.GetOneByIdAsync(id);
+            return null;
         }
 
         public void Insert(data.MediParedes t)
