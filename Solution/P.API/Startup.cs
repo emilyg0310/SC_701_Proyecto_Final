@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using P.API.Mapping;
 using P.DAL.EF;
 using System;
 using System.Collections.Generic;
@@ -27,6 +29,13 @@ namespace P.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CalculoMateContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            var mappingConfig = new MapperConfiguration(mc => {
+                mc.AddProfile(new MappingProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+
+            services.AddSingleton(mapper);
             services.AddSwaggerGen();
             services.AddControllers();
             services.AddControllersWithViews()

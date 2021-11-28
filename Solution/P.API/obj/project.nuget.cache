@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5EqTNwK0wZNfJ0x84xTMLPCOKCx/YnzPPCGAzClgP/cqQ75ZmBJgwqe9qSqlUlXlbfsMNwVZM0a0b4TuPH07RA==",
+  "dgSpecHash": "1r9xrdotRFpYcdgi+jbwlC2q/bxHM2n6TZLxwQrEheQtXvqLbVEBANECfr8sfVnM662hH28NLmy65jIGg3HaFA==",
   "success": true,
   "projectFilePath": "C:\\gits\\PrograAvan\\Solution\\P.API\\P.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KevinOcampo\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
+    "C:\\Users\\KevinOcampo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.20\\microsoft.aspnetcore.jsonpatch.3.1.20.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.20\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.20.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

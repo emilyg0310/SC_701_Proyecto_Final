@@ -328,3 +328,5 @@ C:\gits\PrograAvan\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.csproj.CopyCompl
 C:\gits\PrograAvan\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.dll
 C:\gits\PrograAvan\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.pdb
 C:\gits\PrograAvan\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.genruntimeconfig.cache
+C:\gits\PrograAvan\Solution\P.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\gits\PrograAvan\Solution\P.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
