@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using P.DAL.EF;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using data = P.DAL.DO.Objects;
+using models = P.API.Models;
 
 
 namespace P.API.Controllers
@@ -15,32 +17,36 @@ namespace P.API.Controllers
     public class CantonController : ControllerBase
     {
         private readonly CalculoMateContext _context;
+        private readonly IMapper mapper;
 
-        public CantonController(CalculoMateContext context)
+        public CantonController(CalculoMateContext context, IMapper _mapper)
         {
             _context = context;
+            mapper = _mapper;
         }
 
         // GET: api/Cantons
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<data.Canton>>> GetCanton()
+        public async Task<ActionResult<IEnumerable<models.Canton>>> GetCanton()
         {
             var res = await new P.BS.Canton(_context).GetAllAsync();
-            return res.ToList();
+            var mapaux = mapper.Map<IEnumerable<data.Canton>, IEnumerable<models.Canton>>(res).ToList();
+            return mapaux;
         }
 
         // GET: api/Cantons/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<data.Canton>> GetCanton(short id)
+        public async Task<ActionResult<models.Canton>> GetCanton(short id)
         {
             var canton = await new P.BS.Canton(_context).GetOneByIdAsync(id);
+            var mapaux = mapper.Map<data.Canton, models.Canton>(canton);
 
             if (canton == null)
             {
                 return NotFound();
             }
 
-            return canton;
+            return mapaux;
             
         }
 
@@ -48,7 +54,7 @@ namespace P.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCanton(short id, data.Canton canton)
+        public async Task<IActionResult> PutCanton(short id, models.Canton canton)
         {
             if (id != canton.CodigoCanton)
             {
@@ -58,7 +64,8 @@ namespace P.API.Controllers
 
             try
             {
-                new P.BS.Canton(_context).Update(canton);
+                var mapaux = mapper.Map<models.Canton, data.Canton>(canton);
+                new P.BS.Canton(_context).Update(mapaux);
             }
             catch (Exception ee)
             {
@@ -81,23 +88,10 @@ namespace P.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Canton>> PostCanton(data.Canton canton)
+        public async Task<ActionResult<data.Canton>> PostCanton(models.Canton canton)
         {
-            try
-            {
-                new P.BS.Canton(_context).Insert(canton);
-            }
-            catch (Exception ee)
-            {
-                if (CantonExists(canton.CodigoCanton))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var mapaux = mapper.Map<models.Canton, data.Canton>(canton);
+            new P.BS.Canton(_context).Insert(mapaux);
 
             return CreatedAtAction("GetCanton", new { id = canton.CodigoCanton }, canton);
 
@@ -107,7 +101,7 @@ namespace P.API.Controllers
 
         // DELETE: api/Cantons/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<data.Canton>> DeleteCanton(short id)
+        public async Task<ActionResult<models.Canton>> DeleteCanton(short id)
         {
             var canton = new P.BS.Canton(_context).GetOneById(id);
             if (canton == null)
@@ -117,7 +111,9 @@ namespace P.API.Controllers
 
             new P.BS.Canton(_context).Delete(canton);
 
-            return canton;
+            var mapaux = mapper.Map<data.Canton, models.Canton>(canton);
+
+            return mapaux;
         }
 
         private bool CantonExists(short id)

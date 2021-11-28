@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using P.DAL.EF;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using data = P.DAL.DO.Objects;
+using models = P.API.Models;
 
 namespace P.API.Controllers
 {
@@ -14,39 +16,43 @@ namespace P.API.Controllers
     public class ListCalController : ControllerBase
     {
         private readonly CalculoMateContext _context;
+        private readonly IMapper mapper;
 
-        public ListCalController(CalculoMateContext context)
+        public ListCalController(CalculoMateContext context, IMapper _mapper)
         {
             _context = context;
+            mapper = _mapper;
         }
 
         // GET: api/ListCals
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<data.ListCal>>> GetListCal()
+        public async Task<ActionResult<IEnumerable<models.ListCal>>> GetListCal()
         {
             var res = await new P.BS.ListCal(_context).GetAllAsync();
-            return res.ToList();
+            var mapaux = mapper.Map<IEnumerable<data.ListCal>, IEnumerable<models.ListCal>>(res).ToList();
+            return mapaux;
         }
 
         // GET: api/ListCals/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<data.ListCal>> GetListCal(int id)
+        public async Task<ActionResult<models.ListCal>> GetListCal(int id)
         {
             var listCal = await new P.BS.ListCal(_context).GetOneByIdAsync(id);
+            var mapaux = mapper.Map<data.ListCal, models.ListCal>(listCal);
 
             if (listCal == null)
             {
                 return NotFound();
             }
 
-            return listCal;
+            return mapaux;
         }
 
         // PUT: api/ListCals/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutListCal(int id, data.ListCal listCal)
+        public async Task<IActionResult> PutListCal(int id, models.ListCal listCal)
         {
             if (id != listCal.IdCalculo)
             {
@@ -55,7 +61,8 @@ namespace P.API.Controllers
 
             try
             {
-                new P.BS.ListCal(_context).Update(listCal);
+                var mapaux = mapper.Map<models.ListCal, data.ListCal>(listCal);
+                new P.BS.ListCal(_context).Update(mapaux);
             }
             catch (Exception ee)
             
@@ -77,30 +84,17 @@ namespace P.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.ListCal>> PostListCal(data.ListCal listCal)
+        public async Task<ActionResult<data.ListCal>> PostListCal(models.ListCal listCal)
         {
-            try
-            {
-                new P.BS.ListCal(_context).Insert(listCal);
-            }
-            catch (Exception ee)
-            {
-                if (ListCalExists(listCal.IdCalculo))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var mapaux = mapper.Map<models.ListCal, data.ListCal>(listCal);
+            new P.BS.ListCal(_context).Insert(mapaux);
 
             return CreatedAtAction("GetListCal", new { id = listCal.IdCalculo }, listCal);
         }
 
         // DELETE: api/ListCals/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<data.ListCal>> DeleteListCal(int id)
+        public async Task<ActionResult<models.ListCal>> DeleteListCal(int id)
         {
             var listCal = new P.BS.ListCal(_context).GetOneById(id);
             if (listCal == null)
@@ -110,7 +104,9 @@ namespace P.API.Controllers
 
             new P.BS.ListCal(_context).Delete(listCal);
 
-            return listCal;
+            var mapaux = mapper.Map<data.ListCal, models.ListCal>(listCal);
+
+            return mapaux;
         }
 
         private bool ListCalExists(int id)

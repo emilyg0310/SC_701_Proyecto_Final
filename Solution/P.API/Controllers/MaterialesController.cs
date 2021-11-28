@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using P.DAL.EF;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using data = P.DAL.DO.Objects;
+using models = P.API.Models;
 
 namespace P.API.Controllers
 {
@@ -14,39 +16,43 @@ namespace P.API.Controllers
     public class MaterialesController : ControllerBase
     {
         private readonly CalculoMateContext _context;
+        private readonly IMapper mapper;
 
-        public MaterialesController(CalculoMateContext context)
+        public MaterialesController(CalculoMateContext context, IMapper _mapper)
         {
             _context = context;
+            mapper = _mapper;
         }
 
         // GET: api/Materiales
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<data.Materiales>>> GetMateriales()
+        public async Task<ActionResult<IEnumerable<models.Materiales>>> GetMateriales()
         {
-            var res = await new P.BS.Materiales(_context).GetAllAsync();
-            return res.ToList();
+            var res = new P.BS.Materiales(_context).GetAll();
+            var mapaux = mapper.Map<IEnumerable<data.Materiales>, IEnumerable<models.Materiales>>(res).ToList();
+            return mapaux;
         }
 
         // GET: api/Materiales/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<data.Materiales>> GetMateriales(int id)
+        public async Task<ActionResult<models.Materiales>> GetMateriales(int id)
         {
-            var materiales = await new P.BS.Materiales(_context).GetOneByIdAsync(id);
+            var materiales = new P.BS.Materiales(_context).GetOneById(id);
+            
 
             if (materiales == null)
             {
                 return NotFound();
             }
-
-            return materiales;
+            var mapaux = mapper.Map<data.Materiales, models.Materiales>(materiales);
+            return mapaux;
         }
 
         // PUT: api/Materiales/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMateriales(int id, data.Materiales materiales)
+        public async Task<IActionResult> PutMateriales(int id, models.Materiales materiales)
         {
             if (id != materiales.IdMaterial)
             {
@@ -55,7 +61,8 @@ namespace P.API.Controllers
 
             try
             {
-                new P.BS.Materiales(_context).Update(materiales);
+                var mapaux = mapper.Map<models.Materiales, data.Materiales>(materiales);
+                new P.BS.Materiales(_context).Update(mapaux);
             }
             catch (Exception ee)
             {
@@ -76,30 +83,17 @@ namespace P.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Materiales>> PostMateriales(data.Materiales materiales)
+        public async Task<ActionResult<data.Materiales>> PostMateriales(models.Materiales materiales)
         {
-            try
-            {
-                new P.BS.Materiales(_context).Insert(materiales);
-            }
-            catch (Exception ee)
-            {
-                if (MaterialesExists(materiales.IdMaterial))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var mapaux = mapper.Map<models.Materiales, data.Materiales>(materiales);
+            new P.BS.Materiales(_context).Insert(mapaux);
 
             return CreatedAtAction("GetMateriales", new { id = materiales.IdMaterial }, materiales);
         }
 
         // DELETE: api/Materiales/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<data.Materiales>> DeleteMateriales(int id)
+        public async Task<ActionResult<models.Materiales>> DeleteMateriales(int id)
         {
             var materiales = new P.BS.Materiales(_context).GetOneById(id);
             if (materiales == null)
@@ -109,7 +103,9 @@ namespace P.API.Controllers
 
             new P.BS.Materiales(_context).Delete(materiales);
 
-            return materiales;
+            var mapaux = mapper.Map<data.Materiales, models.Materiales>(materiales);
+
+            return mapaux;
         }
 
         private bool MaterialesExists(int id)

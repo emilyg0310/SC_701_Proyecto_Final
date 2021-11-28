@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using P.DAL.EF;
 using System;
@@ -6,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using data = P.DAL.DO.Objects;
+using models = P.API.Models;
+
 namespace P.API.Controllers
 {
     [Route("api/[controller]")]
@@ -13,39 +16,44 @@ namespace P.API.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly CalculoMateContext _context;
+        private readonly IMapper mapper;
 
-        public ClienteController(CalculoMateContext context)
+        public ClienteController(CalculoMateContext context, IMapper _mapper)
         {
             _context = context;
+            mapper = _mapper;
         }
 
         // GET: api/Clientes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<data.Cliente>>> GetCliente()
+        public async Task<ActionResult<IEnumerable<models.Cliente>>> GetCliente()
         {
             var res = await new P.BS.Cliente(_context).GetAllAsync();
-            return res.ToList();
+            var mapaux = mapper.Map<IEnumerable<data.Cliente>, IEnumerable<models.Cliente>>(res).ToList();
+
+            return mapaux;
         }
 
         // GET: api/Clientes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<data.Cliente>> GetCliente(int id)
+        public async Task<ActionResult<models.Cliente>> GetCliente(int id)
         {
             var cliente = await new P.BS.Cliente(_context).GetOneByIdAsync(id);
+            var mapaux = mapper.Map<data.Cliente, models.Cliente>(cliente);
 
             if (cliente == null)
             {
                 return NotFound();
             }
 
-            return cliente;
+            return mapaux;
         }
 
         // PUT: api/Clientes/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCliente(int id, data.Cliente cliente)
+        public async Task<IActionResult> PutCliente(int id, models.Cliente cliente)
         {
             if (id != cliente.IdClie)
             {
@@ -55,7 +63,8 @@ namespace P.API.Controllers
 
             try
             {
-                new P.BS.Cliente(_context).Update(cliente);
+                var mapaux = mapper.Map<models.Cliente, data.Cliente>(cliente);
+                new P.BS.Cliente(_context).Update(mapaux);
             }
             catch (Exception ee)
             {
@@ -77,30 +86,17 @@ namespace P.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Cliente>> PostCliente(data.Cliente cliente)
+        public async Task<ActionResult<models.Cliente>> PostCliente(models.Cliente cliente)
         {
-            try
-            {
-                new P.BS.Cliente(_context).Insert(cliente);
-            }
-            catch (Exception ee)
-            {
-                if (ClienteExists(cliente.IdClie))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var mapaux = mapper.Map<models.Cliente, data.Cliente>(cliente);
+            new P.BS.Cliente(_context).Insert(mapaux);
 
-            return CreatedAtAction("GetCliente", new { id = cliente.IdClie }, cliente);
+            return CreatedAtAction("GetCliente", new { id = cliente.IdClie}, cliente);
         }
 
         // DELETE: api/Clientes/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<data.Cliente>> DeleteCliente(int id)
+        public async Task<ActionResult<models.Cliente>> DeleteCliente(int id)
         {
             var cliente = new P.BS.Cliente(_context).GetOneById(id);
             if (cliente == null)
@@ -110,7 +106,9 @@ namespace P.API.Controllers
 
             new P.BS.Cliente(_context).Delete(cliente);
 
-            return cliente;
+            var mapaux = mapper.Map<data.Cliente, models.Cliente>(cliente);
+
+            return mapaux;
         }
 
         private bool ClienteExists(int id)

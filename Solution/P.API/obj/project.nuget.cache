@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1r9xrdotRFpYcdgi+jbwlC2q/bxHM2n6TZLxwQrEheQtXvqLbVEBANECfr8sfVnM662hH28NLmy65jIGg3HaFA==",
+  "dgSpecHash": "QadgMdMF87yGXuw1LpzcCQthM/nN0lot032DiyDy7DsT0KqockIx5oLvU0b2uo3aw1Ofbdte586neO3Qh4ZtGQ==",
   "success": true,
   "projectFilePath": "C:\\gits\\PrograAvan\\Solution\\P.API\\P.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
-    "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.20\\microsoft.aspnetcore.jsonpatch.3.1.20.nupkg.sha512",
-    "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.20\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.20.nupkg.sha512",
+    "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.21\\microsoft.aspnetcore.jsonpatch.3.1.21.nupkg.sha512",
+    "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.21\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.21.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

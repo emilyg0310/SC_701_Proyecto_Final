@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using P.DAL.EF;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using data = P.DAL.DO.Objects;
+using models = P.API.Models;
 
 namespace P.API.Controllers
 {
@@ -15,34 +17,40 @@ namespace P.API.Controllers
     {
 
             private readonly CalculoMateContext _context;
+            private readonly IMapper mapper;
 
-            public ProvinciaController(CalculoMateContext context)
+        public ProvinciaController(CalculoMateContext context, IMapper _mapper)
             {
                 _context = context;
-            }
+                   mapper = _mapper;
+        }
 
             // GET: api/Provincias
             [HttpGet]
-            public async Task<ActionResult<IEnumerable<data.Provincia>>> GetProvincia()
+            public async Task<ActionResult<IEnumerable<models.Provincia>>> GetProvincia()
             {
-               
-            var res = await new P.BS.Provincia(_context).GetAllAsync();
-            return res.ToList();
+            var res = new P.BS.Provincia(_context).GetAll();
+            var mapaux = mapper.Map<IEnumerable<data.Provincia>, IEnumerable<models.Provincia>>(res).ToList();
+            return mapaux;
+
+            
         }
 
             // GET: api/Provincias/5
             [HttpGet("{id}")]
-            public async Task<ActionResult<data.Provincia>> GetProvincia(short id)
+            public async Task<ActionResult<models.Provincia>> GetProvincia(short id)
             {
 
-            var provincia = await new P.BS.Provincia(_context).GetOneByIdAsync(id);
+            var groups = new P.BS.Provincia(_context).GetOneById(id);
 
-            if (provincia == null)
+            if (groups == null)
             {
                 return NotFound();
             }
+            var mapaux = mapper.Map<data.Provincia, models.Provincia>(groups);
+            return mapaux;
 
-            return provincia;
+           
 
 
             }
@@ -51,17 +59,18 @@ namespace P.API.Controllers
             // To protect from overposting attacks, enable the specific properties you want to bind to, for
             // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
             [HttpPut("{id}")]
-            public async Task<IActionResult> PutProvincia(short id, data.Provincia provincia)
+            public async Task<IActionResult> PutProvincia(short id, models.Provincia provincia)
             {
+
             if (id != provincia.CodigoProvincia)
             {
                 return BadRequest();
             }
 
-
             try
             {
-                new P.BS.Provincia(_context).Update(provincia);
+                var mapaux = mapper.Map<models.Provincia, data.Provincia>(provincia);
+                new P.BS.Provincia(_context).Update(mapaux);
             }
             catch (Exception ee)
             {
@@ -76,7 +85,6 @@ namespace P.API.Controllers
             }
 
             return NoContent();
-
            
             }
 
@@ -84,23 +92,10 @@ namespace P.API.Controllers
             // To protect from overposting attacks, enable the specific properties you want to bind to, for
             // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
             [HttpPost]
-            public async Task<ActionResult<data.Provincia>> PostProvincia(data.Provincia provincia)
+            public async Task<ActionResult<models.Provincia>> PostProvincia(models.Provincia provincia)
             {
-            try
-            {
-                new P.BS.Provincia(_context).Insert(provincia);
-            }
-            catch (Exception ee)
-            {
-                if (ProvinciaExists(provincia.CodigoProvincia))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var mapaux = mapper.Map<models.Provincia, data.Provincia>(provincia);
+            new P.BS.Provincia(_context).Insert(mapaux);
 
             return CreatedAtAction("GetProvincia", new { id = provincia.CodigoProvincia }, provincia);
 
@@ -109,7 +104,7 @@ namespace P.API.Controllers
 
             // DELETE: api/Provincias/5
             [HttpDelete("{id}")]
-            public async Task<ActionResult<data.Provincia>> DeleteProvincia(short id)
+            public async Task<ActionResult<models.Provincia>> DeleteProvincia(short id)
             {
 
             var provincia = new P.BS.Provincia(_context).GetOneById(id);
@@ -119,8 +114,9 @@ namespace P.API.Controllers
             }
 
             new P.BS.Provincia(_context).Delete(provincia);
+            var mapaux = mapper.Map<data.Provincia, models.Provincia>(provincia);
 
-            return provincia;
+            return mapaux;
 
             }
 
