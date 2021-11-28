@@ -49,3 +49,16 @@ C:\Git\ProyectoFinal\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.runtimec
 C:\Git\ProyectoFinal\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
 C:\Git\ProyectoFinal\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
 C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.genruntimeconfig.cache
+C:\gits\PrograAvan\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.deps.json
+C:\gits\PrograAvan\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.runtimeconfig.json
+C:\gits\PrograAvan\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.runtimeconfig.dev.json
+C:\gits\PrograAvan\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\gits\PrograAvan\Solution\P.DAL.DO\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.csproj.AssemblyReference.cache
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.GeneratedMSBuildEditorConfig.editorconfig
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.AssemblyInfoInputs.cache
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.AssemblyInfo.cs
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.csproj.CoreCompileInputs.cache
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.genruntimeconfig.cache

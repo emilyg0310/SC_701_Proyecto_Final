@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NXi7wTUMh9FXLmGxgPJR9+sDLH9rBFiV9zm1KA/PyXyLqz4z0nUbFV3yaN9/M4z/6o1VN8v4rUy166H8Z4tvUg==",
+  "dgSpecHash": "5EqTNwK0wZNfJ0x84xTMLPCOKCx/YnzPPCGAzClgP/cqQ75ZmBJgwqe9qSqlUlXlbfsMNwVZM0a0b4TuPH07RA==",
   "success": true,
-  "projectFilePath": "C:\\gits\\prograavnaza\\Solution\\P.API\\P.API.csproj",
+  "projectFilePath": "C:\\gits\\PrograAvan\\Solution\\P.API\\P.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.20\\microsoft.aspnetcore.jsonpatch.3.1.20.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.20\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.20.nupkg.sha512",

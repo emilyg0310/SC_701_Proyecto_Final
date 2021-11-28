@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H71P0k4lo16z/jeynhqTKk/u9UOsPj3sGQPpS82+frljNV/QI077SEeoygddRw87jhP1JV0A/uJAS236mdtnsA==",
+  "dgSpecHash": "YxmrbTkTFHdI8xjfUJ4XYf0pxAqWVm65YJh4pq2tFv9onHVEc20kQ/14LOBKdDZ+wxsbG5gya0mJmovdY3PvlQ==",
   "success": true,
-  "projectFilePath": "C:\\gits\\prograavnaza\\Solution\\P.DAL.EF\\P.DAL.EF.csproj",
+  "projectFilePath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\KevinOcampo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

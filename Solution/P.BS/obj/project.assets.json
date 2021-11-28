@@ -5812,11 +5812,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\gits\\prograavnaza\\Solution\\P.BS\\P.BS.csproj",
+      "projectUniqueName": "C:\\gits\\PrograAvan\\Solution\\P.BS\\P.BS.csproj",
       "projectName": "P.BS",
-      "projectPath": "C:\\gits\\prograavnaza\\Solution\\P.BS\\P.BS.csproj",
+      "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.BS\\P.BS.csproj",
       "packagesPath": "C:\\Users\\KevinOcampo\\.nuget\\packages\\",
-      "outputPath": "C:\\gits\\prograavnaza\\Solution\\P.BS\\obj\\",
+      "outputPath": "C:\\gits\\PrograAvan\\Solution\\P.BS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5837,14 +5837,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\gits\\prograavnaza\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
-              "projectPath": "C:\\gits\\prograavnaza\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
+            "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
+              "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
             },
-            "C:\\gits\\prograavnaza\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
-              "projectPath": "C:\\gits\\prograavnaza\\Solution\\P.DAL.EF\\P.DAL.EF.csproj"
+            "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
+              "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj"
             },
-            "C:\\gits\\prograavnaza\\Solution\\P.DAL\\P.DAL.csproj": {
-              "projectPath": "C:\\gits\\prograavnaza\\Solution\\P.DAL\\P.DAL.csproj"
+            "C:\\gits\\PrograAvan\\Solution\\P.DAL\\P.DAL.csproj": {
+              "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL\\P.DAL.csproj"
             }
           }
         }
