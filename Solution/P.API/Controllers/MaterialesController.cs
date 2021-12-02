@@ -83,7 +83,7 @@ namespace P.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Materiales>> PostMateriales(models.Materiales materiales)
+        public async Task<ActionResult<models.Materiales>> PostMateriales(models.Materiales materiales)
         {
             var mapaux = mapper.Map<models.Materiales, data.Materiales>(materiales);
             new P.BS.Materiales(_context).Insert(mapaux);

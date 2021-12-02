@@ -88,7 +88,7 @@ namespace P.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Canton>> PostCanton(models.Canton canton)
+        public async Task<ActionResult<models.Canton>> PostCanton(models.Canton canton)
         {
             var mapaux = mapper.Map<models.Canton, data.Canton>(canton);
             new P.BS.Canton(_context).Insert(mapaux);

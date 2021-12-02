@@ -16,6 +16,6 @@ namespace P.API.Models
         public string NombreMaterial { get; set; }
         public decimal CantiMetro { get; set; }
 
-        
+        public virtual ICollection<CalculoMateri> CalculoMateri { get; set; }
     }
 }
