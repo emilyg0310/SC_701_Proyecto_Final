@@ -29,6 +29,10 @@ namespace P.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CalculoMateContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
+
+services.AddControllers();
+
             var mappingConfig = new MapperConfiguration(mc => {
                 mc.AddProfile(new MappingProfile());
             });
@@ -37,7 +41,7 @@ namespace P.API
 
             services.AddSingleton(mapper);
             services.AddSwaggerGen();
-            services.AddControllers();
+            
             services.AddControllersWithViews()
                     .AddNewtonsoftJson(options =>
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
