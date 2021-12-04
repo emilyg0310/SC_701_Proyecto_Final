@@ -26,7 +26,7 @@ namespace P.DAL.Repository
         {
             return await _db.Canton
                .Include(m => m.CodigoProvincia)
-               .SingleAsync(m => m.CodigoCanton == id);
+               .SingleOrDefaultAsync(m => m.CodigoCanton == id);
         }
 
         private CalculoMateContext _db

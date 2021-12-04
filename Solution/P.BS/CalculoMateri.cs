@@ -13,47 +13,47 @@ namespace P.BS
 {
     public class CalculoMateri : ICRUD<data.CalculoMateri>
     {
-        private CalculoMateContext context;
+        private CalculoMateri context;
 
         public CalculoMateri(CalculoMateContext _context)
         {
-            context = _context;
+            context = new CalculoMateri(_context);
         }
         public void Delete(data.CalculoMateri t)
         {
-            new P.DAL.CalculoMateri(context).Delete(t);
+            context.Delete(t);
 
         }
 
         public IEnumerable<data.CalculoMateri> GetAll()
         {
-            return new P.DAL.CalculoMateri(context).GetAll();
+            return context.GetAll();
         }
 
         public Task<IEnumerable<data.CalculoMateri>> GetAllAsync()
         {
-            return new P.DAL.CalculoMateri(context).GetAllAsync();
+            return context.GetAllAsync();
         }
 
         public data.CalculoMateri GetOneById(int id)
         {
-            return new P.DAL.CalculoMateri(context).GetOneById(id);
+            return context.GetOneById(id);
         }
 
         public Task<data.CalculoMateri> GetOneByIdAsync(int id)
         {
-            return new P.DAL.CalculoMateri(context).GetOneByIdAsync(id);
+            return context.GetOneByIdAsync(id);
 
         }
 
         public void Insert(data.CalculoMateri t)
         {
-            new P.DAL.CalculoMateri(context).Insert(t);
+            context.Insert(t);
         }
 
         public void Update(data.CalculoMateri t)
         {
-            new P.DAL.CalculoMateri(context).Update(t);
+            context.Update(t);
         }
     }
 }

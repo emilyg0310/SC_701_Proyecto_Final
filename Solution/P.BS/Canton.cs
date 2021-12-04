@@ -11,45 +11,45 @@ namespace P.BS
 {
     public class Canton : ICRUD<data.Canton>
     {
-        private CalculoMateContext context;
+        private Canton context;
 
         public Canton(CalculoMateContext _context)
         {
-            context = _context;
+            context = new Canton(_context);
         }
         public void Delete(data.Canton t)
         {
-            new P.DAL.Canton(context).Delete(t);
+            context.Delete(t);
         }
 
         public IEnumerable<data.Canton> GetAll()
         {
-            return new P.DAL.Canton(context).GetAll();
+            return context.GetAll();
         }
 
         public Task<IEnumerable<data.Canton>> GetAllAsync()
         {
-            return new P.DAL.Canton(context).GetAllAsync();
+            return context.GetAllAsync();
         }
 
         public data.Canton GetOneById(int id)
         {
-            return new P.DAL.Canton(context).GetOneById(id);
+            return context.GetOneById(id);
         }
 
         public Task<data.Canton> GetOneByIdAsync(int id)
         {
-            return new P.DAL.Canton(context).GetOneByIdAsync(id);
+            return context.GetOneByIdAsync(id);
         }
 
         public void Insert(data.Canton t)
         {
-            new P.DAL.Canton(context).Insert(t);
+            context.Insert(t);
         }
 
         public void Update(data.Canton t)
         {
-            new P.DAL.Canton(context).Update(t);
+            context.Update(t);
         }
     }
 }

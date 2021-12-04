@@ -11,46 +11,46 @@ namespace P.BS
 {
     public class MediPared : ICRUD<data.MediPared>
     {
-        private CalculoMateContext context;
+        private MediPared context;
 
         public MediPared(CalculoMateContext _context)
         {
-            context = _context;
+            context = new MediPared(_context);
         }
 
         public void Delete(data.MediPared t)
         {
-            new P.DAL.MediPared(context).Delete(t);
+            context.Delete(t);
         }
 
         public IEnumerable<data.MediPared> GetAll()
         {
-            return new P.DAL.MediPared(context).GetAll();
+            return context.GetAll();
         }
 
         public Task<IEnumerable<data.MediPared>> GetAllAsync()
         {
-            return new P.DAL.MediPared(context).GetAllAsync();
+            return context.GetAllAsync();
         }
 
         public data.MediPared GetOneById(int id)
         {
-            return new P.DAL.MediPared(context).GetOneById(id);
+            return context.GetOneById(id);
         }
 
         public Task<data.MediPared> GetOneByIdAsync(int id)
         {
-            return new P.DAL.MediPared(context).GetOneByIdAsync(id);
+            return context.GetOneByIdAsync(id);
         }
 
         public void Insert(data.MediPared t)
         {
-            new P.DAL.MediPared(context).Insert(t);
+            context.Insert(t);
         }
 
         public void Update(data.MediPared t)
         {
-            new P.DAL.MediPared(context).Update(t);
+            context.Update(t);
         }
     }
 }

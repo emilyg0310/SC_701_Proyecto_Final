@@ -85,10 +85,7 @@ namespace P.DAL.Repository
             {
                 dbContext.Set<T>().Attach(t);
             }
-            else
-            {
-                dbContext.Entry<T>(t).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            }
+            dbContext.Entry<T>(t).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
         }
 
         public void UpdateRange(IEnumerable<T> t)

@@ -26,7 +26,7 @@ namespace P.DAL.Repository
         {
             return await _db.Cliente
                .Include(m => m.CodigoCanton)
-               .SingleAsync(m => m.IdClie == id);
+               .SingleOrDefaultAsync(m => m.IdClie == id);
         }
 
         private CalculoMateContext _db

@@ -29,7 +29,7 @@ namespace P.DAL.Repository
             return await _db.ListCal
                .Include(m => m.IdPer)
                .Include(m => m.IdClie)
-               .SingleAsync(m => m.IdCalculo == id);
+               .SingleOrDefaultAsync(m => m.IdCalculo == id);
         }
 
         private CalculoMateContext _db

@@ -76,3 +76,10 @@ C:\gits\PrograAvan\Solution\P.DAL\obj\Debug\netcoreapp3.1\P.DAL.csproj.CopyCompl
 C:\gits\PrograAvan\Solution\P.DAL\obj\Debug\netcoreapp3.1\P.DAL.dll
 C:\gits\PrograAvan\Solution\P.DAL\obj\Debug\netcoreapp3.1\P.DAL.pdb
 C:\gits\PrograAvan\Solution\P.DAL\obj\Debug\netcoreapp3.1\P.DAL.genruntimeconfig.cache
+C:\Git\ProyectoFinal\Solution\P.DAL\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\Git\ProyectoFinal\Solution\P.DAL\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\Git\ProyectoFinal\Solution\P.DAL\bin\Debug\netcoreapp3.1\P.DAL.Repository.dll
+C:\Git\ProyectoFinal\Solution\P.DAL\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL\bin\Debug\netcoreapp3.1\P.DAL.Repository.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\Git\ProyectoFinal\Solution\P.DAL\obj\Debug\netcoreapp3.1\P.DAL.csproj.CopyComplete

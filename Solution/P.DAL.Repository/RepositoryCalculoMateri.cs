@@ -30,7 +30,7 @@ namespace P.DAL.Repository
                .Include(m => m.IdMedParedes)
                .Include(m => m.IdMaterial)
                .Include(m => m.IdCalculo)
-               .SingleAsync(m => m.IdCalMateri == id);
+               .SingleOrDefaultAsync(m => m.IdCalMateri == id);
         }
 
 

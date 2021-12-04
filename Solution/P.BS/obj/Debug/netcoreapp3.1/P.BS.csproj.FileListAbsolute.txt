@@ -71,3 +71,12 @@ C:\gits\PrograAvan\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.csproj.CopyComplet
 C:\gits\PrograAvan\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.dll
 C:\gits\PrograAvan\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.pdb
 C:\gits\PrograAvan\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.genruntimeconfig.cache
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.dll
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.Repository.dll
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.pdb
+C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.Repository.pdb
+C:\Git\ProyectoFinal\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.csproj.CopyComplete

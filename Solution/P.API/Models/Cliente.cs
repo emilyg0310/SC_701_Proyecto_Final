@@ -20,7 +20,6 @@ namespace P.API.Models
         public string Direccion { get; set; }
         public short CodigoCanton { get; set; }
 
-        public virtual Canton CodigoCantonNavigation { get; set; }
         
     }
 }

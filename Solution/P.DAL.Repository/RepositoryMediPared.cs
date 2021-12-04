@@ -26,7 +26,7 @@ namespace P.DAL.Repository
         {
             return await _db.MediPared
                .Include(m => m.IdMedParedes)
-               .SingleAsync(m => m.IdMedPared == id);
+               .SingleOrDefaultAsync(m => m.IdMedPared == id);
         }
 
         private CalculoMateContext _db

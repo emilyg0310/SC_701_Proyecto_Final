@@ -11,46 +11,46 @@ namespace P.BS
 {
     public class Cliente : ICRUD<data.Cliente>
     {
-        private CalculoMateContext context;
+        private Cliente context;
 
         public Cliente(CalculoMateContext _context)
         {
-            context = _context;
+            context = new Cliente(_context);
         }
 
         public void Delete(data.Cliente t)
         {
-            new P.DAL.Cliente(context).Delete(t);
+            context.Delete(t);
         }
 
         public IEnumerable<data.Cliente> GetAll()
         {
-            return new P.DAL.Cliente(context).GetAll();
+            return context.GetAll();
         }
 
         public Task<IEnumerable<data.Cliente>> GetAllAsync()
         {
-            return new P.DAL.Cliente(context).GetAllAsync();
+            return context.GetAllAsync();
         }
 
         public data.Cliente GetOneById(int id)
         {
-            return new P.DAL.Cliente(context).GetOneById(id);
+            return context.GetOneById(id);
         }
 
         public Task<data.Cliente> GetOneByIdAsync(int id)
         {
-            return new P.DAL.Cliente(context).GetOneByIdAsync(id);
+            return context.GetOneByIdAsync(id);
         }
 
         public void Insert(data.Cliente t)
         {
-            new P.DAL.Cliente(context).Insert(t);
+            context.Insert(t);
         }
 
         public void Update(data.Cliente t)
         {
-            new P.DAL.Cliente(context).Update(t);
+            context.Update(t);
         }
     }
 }
