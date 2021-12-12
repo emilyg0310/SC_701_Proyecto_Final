@@ -56,7 +56,7 @@ namespace API.Wizard.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCalMateri,IdMaterial,IdCalculo,IdMedParedes")] CalculoMateri calculoMateri)
+        public async Task<IActionResult> Create([Bind("IdCalMateri,IdMaterial,IdCalculo,TotalCalculo,IdMedParedes")] CalculoMateri calculoMateri)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace API.Wizard.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCalMateri,IdMaterial,IdCalculo,IdMedParedes")] CalculoMateri calculoMateri)
+        public async Task<IActionResult> Edit(int id, [Bind("IdCalMateri,IdMaterial,IdCalculo,TotalCalculo,IdMedParedes")] CalculoMateri calculoMateri)
         {
             if (id != calculoMateri.IdCalMateri)
             {

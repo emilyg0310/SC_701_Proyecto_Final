@@ -18,14 +18,14 @@ namespace P.DAL.Repository
         public async Task<IEnumerable<Cliente>> GetAllAsync()
         {
             return await _db.Cliente
-                .Include(m => m.CodigoCanton)
+                .Include(m => m.CodigoCantonNavigation)
                 .ToListAsync();
         }
 
         public async Task<Cliente> GetOneByIdAsync(int id)
         {
             return await _db.Cliente
-               .Include(m => m.CodigoCanton)
+               .Include(m => m.CodigoCantonNavigation)
                .SingleOrDefaultAsync(m => m.IdClie == id);
         }
 

@@ -19,16 +19,16 @@ namespace P.DAL.Repository
         public async Task<IEnumerable<ListCal>> GetAllAsync()
         {
             return await _db.ListCal
-                .Include(m => m.IdPer)
-                .Include(m => m.IdClie)
+                .Include(m => m.IdPerNavigation)
+                .Include(m => m.IdClieNavigation)
                 .ToListAsync();
         }
 
         public async Task<ListCal> GetOneByIdAsync(int id)
         {
             return await _db.ListCal
-               .Include(m => m.IdPer)
-               .Include(m => m.IdClie)
+               .Include(m => m.IdPerNavigation)
+               .Include(m => m.IdClieNavigation)
                .SingleOrDefaultAsync(m => m.IdCalculo == id);
         }
 

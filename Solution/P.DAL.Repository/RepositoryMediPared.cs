@@ -18,14 +18,14 @@ namespace P.DAL.Repository
         public async Task<IEnumerable<MediPared>> GetAllAsync()
         {
             return await _db.MediPared
-                .Include(m => m.IdMedParedes)
+                .Include(m => m.IdMedParedesNavigation)
                 .ToListAsync();
         }
 
         public async Task<MediPared> GetOneByIdAsync(int id)
         {
             return await _db.MediPared
-               .Include(m => m.IdMedParedes)
+               .Include(m => m.IdMedParedesNavigation)
                .SingleOrDefaultAsync(m => m.IdMedPared == id);
         }
 

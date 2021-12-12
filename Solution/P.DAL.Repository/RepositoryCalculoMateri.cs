@@ -18,18 +18,18 @@ namespace P.DAL.Repository
         public async Task<IEnumerable<CalculoMateri>>GetAllAsync()
         {
             return await _db.CalculoMateri
-                .Include(m => m.IdMedParedes)
-                .Include(m => m.IdMaterial)
-                .Include(m => m.IdCalculo)
+                .Include(m => m.IdMedParedesNavigation)
+                .Include(m => m.IdMaterialNavigation)
+                .Include(m => m.IdCalculoNavigation)
                 .ToListAsync();
         }
         
         public async Task<CalculoMateri>GetOneByIdAsync(int id)
         {
             return await _db.CalculoMateri
-               .Include(m => m.IdMedParedes)
-               .Include(m => m.IdMaterial)
-               .Include(m => m.IdCalculo)
+               .Include(m => m.IdMedParedesNavigation)
+               .Include(m => m.IdMaterialNavigation)
+               .Include(m => m.IdCalculoNavigation)
                .SingleOrDefaultAsync(m => m.IdCalMateri == id);
         }
 
