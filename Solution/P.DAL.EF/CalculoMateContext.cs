@@ -32,7 +32,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<CalculoMateri>(entity =>
             {
                 entity.HasKey(e => e.IdCalMateri)
-                    .HasName("PK__CalculoM__52C731141A10DE06");
+                    .HasName("PK__CalculoM__52C73114E837CD5B");
 
                 entity.Property(e => e.IdCalMateri).HasColumnName("idCalMateri");
 
@@ -41,6 +41,10 @@ namespace P.DAL.EF
                 entity.Property(e => e.IdMaterial).HasColumnName("idMaterial");
 
                 entity.Property(e => e.IdMedParedes).HasColumnName("idMedParedes");
+
+                entity.Property(e => e.TotalCalculo)
+                    .HasColumnName("totalCalculo")
+                    .HasColumnType("decimal(18, 0)");
 
                 entity.HasOne(d => d.IdCalculoNavigation)
                     .WithMany(p => p.CalculoMateri)
@@ -64,7 +68,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<Canton>(entity =>
             {
                 entity.HasKey(e => e.CodigoCanton)
-                    .HasName("PK__Canton__45E861BD279A37E8");
+                    .HasName("PK__Canton__45E861BDE09F433A");
 
                 entity.Property(e => e.CodigoCanton).HasColumnName("codigo_canton");
 
@@ -86,7 +90,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<Cliente>(entity =>
             {
                 entity.HasKey(e => e.IdClie)
-                    .HasName("PK__Cliente__3766D498FB32F7D4");
+                    .HasName("PK__Cliente__3766D498C4660E29");
 
                 entity.Property(e => e.IdClie).ValueGeneratedNever();
 
@@ -125,13 +129,13 @@ namespace P.DAL.EF
                     .WithMany(p => p.Cliente)
                     .HasForeignKey(d => d.CodigoCanton)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_cant");
+                    .HasConstraintName("FK_Canton");
             });
 
             modelBuilder.Entity<ListCal>(entity =>
             {
                 entity.HasKey(e => e.IdCalculo)
-                    .HasName("PK__ListCal__77CAC70885074D1F");
+                    .HasName("PK__ListCal__77CAC708D6D6F2F3");
 
                 entity.Property(e => e.IdCalculo).HasColumnName("idCalculo");
 
@@ -157,7 +161,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<Materiales>(entity =>
             {
                 entity.HasKey(e => e.IdMaterial)
-                    .HasName("PK__Material__6AC7E3EBEE55A131");
+                    .HasName("PK__Material__6AC7E3EB397681C0");
 
                 entity.Property(e => e.IdMaterial).HasColumnName("idMaterial");
 
@@ -173,7 +177,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<MediPared>(entity =>
             {
                 entity.HasKey(e => e.IdMedPared)
-                    .HasName("PK__MediPare__22C19CF914D73047");
+                    .HasName("PK__MediPare__22C19CF9DA7B5F0E");
 
                 entity.Property(e => e.IdMedPared).HasColumnName("idMedPared");
 
@@ -195,7 +199,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<MediParedes>(entity =>
             {
                 entity.HasKey(e => e.IdMedParedes)
-                    .HasName("PK__MediPare__08EAE0338E48344E");
+                    .HasName("PK__MediPare__08EAE0332CE36E1D");
 
                 entity.Property(e => e.IdMedParedes).HasColumnName("idMedParedes");
 
@@ -215,7 +219,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<Persona>(entity =>
             {
                 entity.HasKey(e => e.IdPer)
-                    .HasName("PK__Persona__2ACE59B5BAD85C1C");
+                    .HasName("PK__Persona__2ACE59B535BB48CD");
 
                 entity.Property(e => e.IdPer).ValueGeneratedNever();
 
@@ -258,7 +262,7 @@ namespace P.DAL.EF
             modelBuilder.Entity<Provincia>(entity =>
             {
                 entity.HasKey(e => e.CodigoProvincia)
-                    .HasName("PK__Provinci__265D811C66E3AC21");
+                    .HasName("PK__Provinci__265D811C08038C19");
 
                 entity.Property(e => e.CodigoProvincia).HasColumnName("codigo_provincia");
 

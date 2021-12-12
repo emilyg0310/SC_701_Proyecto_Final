@@ -20,7 +20,7 @@ namespace API.Models
         public string SeguApellido { get; set; }
         public string Correo { get; set; }
         public string Direccion { get; set; }
-        public short CodigoCanton { get; set; }
+        public int CodigoCanton { get; set; }
 
         public virtual Canton CodigoCantonNavigation { get; set; }
         public virtual ICollection<ListCal> ListCal { get; set; }

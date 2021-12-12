@@ -20,14 +20,14 @@ namespace API.Controllers
             _context = context;
         }
 
-        // GET: api/CalculoMateris
+        // GET: api/CalculoMateri
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CalculoMateri>>> GetCalculoMateri()
         {
             return await _context.CalculoMateri.ToListAsync();
         }
 
-        // GET: api/CalculoMateris/5
+        // GET: api/CalculoMateri/5
         [HttpGet("{id}")]
         public async Task<ActionResult<CalculoMateri>> GetCalculoMateri(int id)
         {
@@ -41,7 +41,7 @@ namespace API.Controllers
             return calculoMateri;
         }
 
-        // PUT: api/CalculoMateris/5
+        // PUT: api/CalculoMateri/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
@@ -73,7 +73,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/CalculoMateris
+        // POST: api/CalculoMateri
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
@@ -85,7 +85,7 @@ namespace API.Controllers
             return CreatedAtAction("GetCalculoMateri", new { id = calculoMateri.IdCalMateri }, calculoMateri);
         }
 
-        // DELETE: api/CalculoMateris/5
+        // DELETE: api/CalculoMateri/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<CalculoMateri>> DeleteCalculoMateri(int id)
         {

@@ -5,17 +5,18 @@ using P.DAL.DO.Interfaces;
 using P.DAL.EF;
 using data = P.DAL.DO.Objects;
 using P.DAL;
+using dal = P.DAL;
 using System.Threading.Tasks;
 
 namespace P.BS
 {
     public class MediPared : ICRUD<data.MediPared>
     {
-        private MediPared context;
+        private dal.MediPared context;
 
         public MediPared(CalculoMateContext _context)
         {
-            context = new MediPared(_context);
+            context = new dal.MediPared(_context);
         }
 
         public void Delete(data.MediPared t)

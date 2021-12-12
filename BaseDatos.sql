@@ -1,6 +1,6 @@
 USE [CalculoMate]
 GO
-/****** Object:  Table [dbo].[CalculoMateri]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[CalculoMateri]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -9,6 +9,7 @@ CREATE TABLE [dbo].[CalculoMateri](
 	[idCalMateri] [int] IDENTITY(1,1) NOT NULL,
 	[idMaterial] [int] NOT NULL,
 	[idCalculo] [int] NOT NULL,
+	[totalCalculo] [decimal](18, 0) NOT NULL,
 	[idMedParedes] [int] NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
@@ -16,14 +17,14 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Canton]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[Canton]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Canton](
-	[codigo_canton] [smallint] IDENTITY(1,1) NOT NULL,
-	[codigo_provincia] [smallint] NOT NULL,
+	[codigo_canton] [int] IDENTITY(1,1) NOT NULL,
+	[codigo_provincia] [int] NOT NULL,
 	[nombre_canton] [varchar](45) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
@@ -31,7 +32,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Cliente]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[Cliente]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -43,14 +44,14 @@ CREATE TABLE [dbo].[Cliente](
 	[seguApellido] [varchar](40) NOT NULL,
 	[correo] [varchar](40) NOT NULL,
 	[direccion] [varchar](40) NOT NULL,
-	[codigo_canton] [smallint] NOT NULL,
+	[codigo_canton] [int] NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[IdClie] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ListCal]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[ListCal]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -66,7 +67,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Materiales]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[Materiales]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -81,7 +82,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MediPared]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[MediPared]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -98,7 +99,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MediParedes]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[MediParedes]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -114,7 +115,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Persona]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[Persona]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -133,13 +134,13 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Provincia]    Script Date: 19/10/2021 10:42:13 ******/
+/****** Object:  Table [dbo].[Provincia]    Script Date: 4/12/2021 01:19:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Provincia](
-	[codigo_provincia] [smallint] IDENTITY(1,1) NOT NULL,
+	[codigo_provincia] [int] IDENTITY(1,1) NOT NULL,
 	[nombre_provincia] [varchar](45) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
@@ -167,13 +168,11 @@ REFERENCES [dbo].[Provincia] ([codigo_provincia])
 GO
 ALTER TABLE [dbo].[Canton] CHECK CONSTRAINT [FK_CANTON_PROVINCIA]
 GO
-ALTER TABLE [dbo].[Cliente]  WITH CHECK ADD  CONSTRAINT [FK_cant] FOREIGN KEY([codigo_canton])
-REFERENCES [dbo].[Canton] ([codigo_canton])
-GO
-ALTER TABLE [dbo].[Cliente] CHECK CONSTRAINT [FK_cant]
-GO
 ALTER TABLE [dbo].[ListCal]  WITH CHECK ADD  CONSTRAINT [FK_IdClie] FOREIGN KEY([IdClie])
 REFERENCES [dbo].[Cliente] ([IdClie])
+GO
+ALTER TABLE [dbo].[Cliente]  WITH CHECK ADD  CONSTRAINT [FK_Canton] FOREIGN KEY([codigo_canton])
+REFERENCES [dbo].[Canton] ([codigo_canton])
 GO
 ALTER TABLE [dbo].[ListCal] CHECK CONSTRAINT [FK_IdClie]
 GO

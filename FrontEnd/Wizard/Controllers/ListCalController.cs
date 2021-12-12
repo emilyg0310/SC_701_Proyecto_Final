@@ -18,14 +18,14 @@ namespace Wizard.Controllers
             _context = context;
         }
 
-        // GET: ListCals
+        // GET: ListCal
         public async Task<IActionResult> Index()
         {
             var calculoMateContext = _context.ListCal.Include(l => l.IdClieNavigation).Include(l => l.IdPerNavigation);
             return View(await calculoMateContext.ToListAsync());
         }
 
-        // GET: ListCals/Details/5
+        // GET: ListCal/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,7 +45,7 @@ namespace Wizard.Controllers
             return View(listCal);
         }
 
-        // GET: ListCals/Create
+        // GET: ListCal/Create
         public IActionResult Create()
         {
             ViewData["IdClie"] = new SelectList(_context.Cliente, "IdClie", "Correo");
@@ -53,7 +53,7 @@ namespace Wizard.Controllers
             return View();
         }
 
-        // POST: ListCals/Create
+        // POST: ListCal/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -71,7 +71,7 @@ namespace Wizard.Controllers
             return View(listCal);
         }
 
-        // GET: ListCals/Edit/5
+        // GET: ListCal/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -89,7 +89,7 @@ namespace Wizard.Controllers
             return View(listCal);
         }
 
-        // POST: ListCals/Edit/5
+        // POST: ListCal/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -126,7 +126,7 @@ namespace Wizard.Controllers
             return View(listCal);
         }
 
-        // GET: ListCals/Delete/5
+        // GET: ListCal/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -146,7 +146,7 @@ namespace Wizard.Controllers
             return View(listCal);
         }
 
-        // POST: ListCals/Delete/5
+        // POST: ListCal/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

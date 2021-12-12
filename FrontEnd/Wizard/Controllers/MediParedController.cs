@@ -18,14 +18,14 @@ namespace Wizard.Controllers
             _context = context;
         }
 
-        // GET: MediPareds
+        // GET: MediPared
         public async Task<IActionResult> Index()
         {
             var calculoMateContext = _context.MediPared.Include(m => m.IdMedParedesNavigation);
             return View(await calculoMateContext.ToListAsync());
         }
 
-        // GET: MediPareds/Details/5
+        // GET: MediPared/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,14 +44,14 @@ namespace Wizard.Controllers
             return View(mediPared);
         }
 
-        // GET: MediPareds/Create
+        // GET: MediPared/Create
         public IActionResult Create()
         {
             ViewData["IdMedParedes"] = new SelectList(_context.MediParedes, "IdMedParedes", "IdMedParedes");
             return View();
         }
 
-        // POST: MediPareds/Create
+        // POST: MediPared/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -68,7 +68,7 @@ namespace Wizard.Controllers
             return View(mediPared);
         }
 
-        // GET: MediPareds/Edit/5
+        // GET: MediPared/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,7 +85,7 @@ namespace Wizard.Controllers
             return View(mediPared);
         }
 
-        // POST: MediPareds/Edit/5
+        // POST: MediPared/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -121,7 +121,7 @@ namespace Wizard.Controllers
             return View(mediPared);
         }
 
-        // GET: MediPareds/Delete/5
+        // GET: MediPared/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,7 +140,7 @@ namespace Wizard.Controllers
             return View(mediPared);
         }
 
-        // POST: MediPareds/Delete/5
+        // POST: MediPared/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

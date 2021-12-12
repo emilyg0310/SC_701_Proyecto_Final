@@ -11,8 +11,8 @@ namespace P.DAL.DO.Objects
             Cliente = new HashSet<Cliente>();
         }
 
-        public short CodigoCanton { get; set; }
-        public short CodigoProvincia { get; set; }
+        public int CodigoCanton { get; set; }
+        public int CodigoProvincia { get; set; }
         public string NombreCanton { get; set; }
 
         public virtual Provincia CodigoProvinciaNavigation { get; set; }

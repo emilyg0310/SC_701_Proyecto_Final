@@ -122,7 +122,6 @@ C:\Git\Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.csproj.CopyCo
 C:\Git\Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.dll
 C:\Git\Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.pdb
 C:\Git\Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.genruntimeconfig.cache
-C:\Git\ProyectoFinal\Solution\P.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Git\ProyectoFinal\Solution\P.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Git\ProyectoFinal\Solution\P.API\bin\Debug\netcoreapp3.1\P.API.exe
 C:\Git\ProyectoFinal\Solution\P.API\bin\Debug\netcoreapp3.1\P.API.deps.json

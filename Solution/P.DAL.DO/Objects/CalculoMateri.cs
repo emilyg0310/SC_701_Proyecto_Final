@@ -9,6 +9,7 @@ namespace P.DAL.DO.Objects
         public int IdCalMateri { get; set; }
         public int IdMaterial { get; set; }
         public int IdCalculo { get; set; }
+        public decimal TotalCalculo { get; set; }
         public int IdMedParedes { get; set; }
 
         public virtual ListCal IdCalculoNavigation { get; set; }

@@ -12,9 +12,9 @@ namespace P.API.Models
             
         }
 
-        public short CodigoProvincia { get; set; }
+        public int CodigoProvincia { get; set; }
         public string NombreProvincia { get; set; }
 
-       
+
     }
 }

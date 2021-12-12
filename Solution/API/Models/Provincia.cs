@@ -14,7 +14,7 @@ namespace API.Models
             Canton = new HashSet<Canton>();
         }
 
-        public short CodigoProvincia { get; set; }
+        public int CodigoProvincia { get; set; }
         public string NombreProvincia { get; set; }
 
         public virtual ICollection<Canton> Canton { get; set; }

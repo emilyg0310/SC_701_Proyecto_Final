@@ -20,16 +20,16 @@ namespace API.Controllers
             _context = context;
         }
 
-        // GET: api/Provincias
+        // GET: api/Provincia
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Provincia>>> GetProvincia()
         {
             return await _context.Provincia.ToListAsync();
         }
 
-        // GET: api/Provincias/5
+        // GET: api/Provincia/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Provincia>> GetProvincia(short id)
+        public async Task<ActionResult<Provincia>> GetProvincia(int id)
         {
             var provincia = await _context.Provincia.FindAsync(id);
 
@@ -41,11 +41,11 @@ namespace API.Controllers
             return provincia;
         }
 
-        // PUT: api/Provincias/5
+        // PUT: api/Provincia/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProvincia(short id, Provincia provincia)
+        public async Task<IActionResult> PutProvincia(int id, Provincia provincia)
         {
             if (id != provincia.CodigoProvincia)
             {
@@ -73,7 +73,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/Provincias
+        // POST: api/Provincia
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
@@ -85,9 +85,9 @@ namespace API.Controllers
             return CreatedAtAction("GetProvincia", new { id = provincia.CodigoProvincia }, provincia);
         }
 
-        // DELETE: api/Provincias/5
+        // DELETE: api/Provincia/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Provincia>> DeleteProvincia(short id)
+        public async Task<ActionResult<Provincia>> DeleteProvincia(int id)
         {
             var provincia = await _context.Provincia.FindAsync(id);
             if (provincia == null)
@@ -101,7 +101,7 @@ namespace API.Controllers
             return provincia;
         }
 
-        private bool ProvinciaExists(short id)
+        private bool ProvinciaExists(int id)
         {
             return _context.Provincia.Any(e => e.CodigoProvincia == id);
         }

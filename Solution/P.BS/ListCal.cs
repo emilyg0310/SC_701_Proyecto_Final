@@ -5,17 +5,18 @@ using P.DAL.DO.Interfaces;
 using P.DAL.EF;
 using data = P.DAL.DO.Objects;
 using P.DAL;
+using dal = P.DAL;
 using System.Threading.Tasks;
 
 namespace P.BS
 {
     public class ListCal : ICRUD<data.ListCal>
     {
-        private ListCal context;
+        private dal.ListCal context;
 
         public ListCal(CalculoMateContext _context)
         {
-            context = new ListCal(_context);
+            context = new dal.ListCal(_context);
         }
     
         public void Delete(data.ListCal t)

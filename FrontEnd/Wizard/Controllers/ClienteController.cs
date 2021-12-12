@@ -18,13 +18,14 @@ namespace Wizard.Controllers
             _context = context;
         }
 
-        // GET: Clientes
+        // GET: Cliente
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cliente.ToListAsync());
+            var calculoMateContext = _context.Cliente.Include(c => c.CodigoCantonNavigation);
+            return View(await calculoMateContext.ToListAsync());
         }
 
-        // GET: Clientes/Details/5
+        // GET: Cliente/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,6 +34,7 @@ namespace Wizard.Controllers
             }
 
             var cliente = await _context.Cliente
+                .Include(c => c.CodigoCantonNavigation)
                 .FirstOrDefaultAsync(m => m.IdClie == id);
             if (cliente == null)
             {
@@ -42,13 +44,14 @@ namespace Wizard.Controllers
             return View(cliente);
         }
 
-        // GET: Clientes/Create
+        // GET: Cliente/Create
         public IActionResult Create()
         {
+            ViewData["CodigoCanton"] = new SelectList(_context.Canton, "CodigoCanton", "NombreCanton");
             return View();
         }
 
-        // POST: Clientes/Create
+        // POST: Cliente/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -61,10 +64,11 @@ namespace Wizard.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CodigoCanton"] = new SelectList(_context.Canton, "CodigoCanton", "NombreCanton", cliente.CodigoCanton);
             return View(cliente);
         }
 
-        // GET: Clientes/Edit/5
+        // GET: Cliente/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -77,10 +81,11 @@ namespace Wizard.Controllers
             {
                 return NotFound();
             }
+            ViewData["CodigoCanton"] = new SelectList(_context.Canton, "CodigoCanton", "NombreCanton", cliente.CodigoCanton);
             return View(cliente);
         }
 
-        // POST: Clientes/Edit/5
+        // POST: Cliente/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -112,10 +117,11 @@ namespace Wizard.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CodigoCanton"] = new SelectList(_context.Canton, "CodigoCanton", "NombreCanton", cliente.CodigoCanton);
             return View(cliente);
         }
 
-        // GET: Clientes/Delete/5
+        // GET: Cliente/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,6 +130,7 @@ namespace Wizard.Controllers
             }
 
             var cliente = await _context.Cliente
+                .Include(c => c.CodigoCantonNavigation)
                 .FirstOrDefaultAsync(m => m.IdClie == id);
             if (cliente == null)
             {
@@ -133,7 +140,7 @@ namespace Wizard.Controllers
             return View(cliente);
         }
 
-        // POST: Clientes/Delete/5
+        // POST: Cliente/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

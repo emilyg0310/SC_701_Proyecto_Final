@@ -20,14 +20,14 @@ namespace API.Controllers
             _context = context;
         }
 
-        // GET: api/Clientes
+        // GET: api/Cliente
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetCliente()
         {
             return await _context.Cliente.ToListAsync();
         }
 
-        // GET: api/Clientes/5
+        // GET: api/Cliente/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Cliente>> GetCliente(int id)
         {
@@ -41,7 +41,7 @@ namespace API.Controllers
             return cliente;
         }
 
-        // PUT: api/Clientes/5
+        // PUT: api/Cliente/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
@@ -73,7 +73,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/Clientes
+        // POST: api/Cliente
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
@@ -99,7 +99,7 @@ namespace API.Controllers
             return CreatedAtAction("GetCliente", new { id = cliente.IdClie }, cliente);
         }
 
-        // DELETE: api/Clientes/5
+        // DELETE: api/Cliente/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Cliente>> DeleteCliente(int id)
         {

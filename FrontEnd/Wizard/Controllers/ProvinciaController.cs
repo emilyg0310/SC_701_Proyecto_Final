@@ -18,13 +18,13 @@ namespace Wizard.Controllers
             _context = context;
         }
 
-        // GET: Provincias
+        // GET: Provincia
         public async Task<IActionResult> Index()
         {
             return View(await _context.Provincia.ToListAsync());
         }
 
-        // GET: Provincias/Details/5
+        // GET: Provincia/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -42,13 +42,13 @@ namespace Wizard.Controllers
             return View(provincia);
         }
 
-        // GET: Provincias/Create
+        // GET: Provincia/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Provincias/Create
+        // POST: Provincia/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -64,7 +64,7 @@ namespace Wizard.Controllers
             return View(provincia);
         }
 
-        // GET: Provincias/Edit/5
+        // GET: Provincia/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -80,7 +80,7 @@ namespace Wizard.Controllers
             return View(provincia);
         }
 
-        // POST: Provincias/Edit/5
+        // POST: Provincia/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -115,7 +115,7 @@ namespace Wizard.Controllers
             return View(provincia);
         }
 
-        // GET: Provincias/Delete/5
+        // GET: Provincia/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -133,7 +133,7 @@ namespace Wizard.Controllers
             return View(provincia);
         }
 
-        // POST: Provincias/Delete/5
+        // POST: Provincia/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

@@ -18,14 +18,14 @@ namespace Wizard.Controllers
             _context = context;
         }
 
-        // GET: CalculoMateris
+        // GET: CalculoMateri
         public async Task<IActionResult> Index()
         {
             var calculoMateContext = _context.CalculoMateri.Include(c => c.IdCalculoNavigation).Include(c => c.IdMaterialNavigation).Include(c => c.IdMedParedesNavigation);
             return View(await calculoMateContext.ToListAsync());
         }
 
-        // GET: CalculoMateris/Details/5
+        // GET: CalculoMateri/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,7 +46,7 @@ namespace Wizard.Controllers
             return View(calculoMateri);
         }
 
-        // GET: CalculoMateris/Create
+        // GET: CalculoMateri/Create
         public IActionResult Create()
         {
             ViewData["IdCalculo"] = new SelectList(_context.ListCal, "IdCalculo", "NombreCalculo");
@@ -55,12 +55,12 @@ namespace Wizard.Controllers
             return View();
         }
 
-        // POST: CalculoMateris/Create
+        // POST: CalculoMateri/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCalMateri,IdMaterial,IdCalculo,IdMedParedes")] CalculoMateri calculoMateri)
+        public async Task<IActionResult> Create([Bind("IdCalMateri,IdMaterial,IdCalculo,TotalCalculo,IdMedParedes")] CalculoMateri calculoMateri)
         {
             if (ModelState.IsValid)
             {
@@ -74,7 +74,7 @@ namespace Wizard.Controllers
             return View(calculoMateri);
         }
 
-        // GET: CalculoMateris/Edit/5
+        // GET: CalculoMateri/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -93,12 +93,12 @@ namespace Wizard.Controllers
             return View(calculoMateri);
         }
 
-        // POST: CalculoMateris/Edit/5
+        // POST: CalculoMateri/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCalMateri,IdMaterial,IdCalculo,IdMedParedes")] CalculoMateri calculoMateri)
+        public async Task<IActionResult> Edit(int id, [Bind("IdCalMateri,IdMaterial,IdCalculo,TotalCalculo,IdMedParedes")] CalculoMateri calculoMateri)
         {
             if (id != calculoMateri.IdCalMateri)
             {
@@ -131,7 +131,7 @@ namespace Wizard.Controllers
             return View(calculoMateri);
         }
 
-        // GET: CalculoMateris/Delete/5
+        // GET: CalculoMateri/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -152,7 +152,7 @@ namespace Wizard.Controllers
             return View(calculoMateri);
         }
 
-        // POST: CalculoMateris/Delete/5
+        // POST: CalculoMateri/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

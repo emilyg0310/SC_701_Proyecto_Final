@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using dal = P.DAL;
 using P.DAL.DO.Interfaces;
 using P.DAL.EF;
 using data = P.DAL.DO.Objects;
@@ -13,11 +13,11 @@ namespace P.BS
 {
     public class CalculoMateri : ICRUD<data.CalculoMateri>
     {
-        private CalculoMateri context;
+        private dal.CalculoMateri context;
 
         public CalculoMateri(CalculoMateContext _context)
         {
-            context = new CalculoMateri(_context);
+            context = new dal.CalculoMateri(_context);
         }
         public void Delete(data.CalculoMateri t)
         {

@@ -20,16 +20,16 @@ namespace API.Controllers
             _context = context;
         }
 
-        // GET: api/Cantons
+        // GET: api/Canton
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Canton>>> GetCanton()
         {
             return await _context.Canton.ToListAsync();
         }
 
-        // GET: api/Cantons/5
+        // GET: api/Canton/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Canton>> GetCanton(short id)
+        public async Task<ActionResult<Canton>> GetCanton(int id)
         {
             var canton = await _context.Canton.FindAsync(id);
 
@@ -41,11 +41,11 @@ namespace API.Controllers
             return canton;
         }
 
-        // PUT: api/Cantons/5
+        // PUT: api/Canton/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCanton(short id, Canton canton)
+        public async Task<IActionResult> PutCanton(int id, Canton canton)
         {
             if (id != canton.CodigoCanton)
             {
@@ -73,7 +73,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/Cantons
+        // POST: api/Canton
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
@@ -85,9 +85,9 @@ namespace API.Controllers
             return CreatedAtAction("GetCanton", new { id = canton.CodigoCanton }, canton);
         }
 
-        // DELETE: api/Cantons/5
+        // DELETE: api/Canton/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Canton>> DeleteCanton(short id)
+        public async Task<ActionResult<Canton>> DeleteCanton(int id)
         {
             var canton = await _context.Canton.FindAsync(id);
             if (canton == null)
@@ -101,7 +101,7 @@ namespace API.Controllers
             return canton;
         }
 
-        private bool CantonExists(short id)
+        private bool CantonExists(int id)
         {
             return _context.Canton.Any(e => e.CodigoCanton == id);
         }

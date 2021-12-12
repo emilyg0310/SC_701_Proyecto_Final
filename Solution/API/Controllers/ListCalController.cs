@@ -20,14 +20,14 @@ namespace API.Controllers
             _context = context;
         }
 
-        // GET: api/ListCals
+        // GET: api/ListCal
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ListCal>>> GetListCal()
         {
             return await _context.ListCal.ToListAsync();
         }
 
-        // GET: api/ListCals/5
+        // GET: api/ListCal/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ListCal>> GetListCal(int id)
         {
@@ -41,7 +41,7 @@ namespace API.Controllers
             return listCal;
         }
 
-        // PUT: api/ListCals/5
+        // PUT: api/ListCal/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
@@ -73,7 +73,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/ListCals
+        // POST: api/ListCal
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
@@ -85,7 +85,7 @@ namespace API.Controllers
             return CreatedAtAction("GetListCal", new { id = listCal.IdCalculo }, listCal);
         }
 
-        // DELETE: api/ListCals/5
+        // DELETE: api/ListCal/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<ListCal>> DeleteListCal(int id)
         {

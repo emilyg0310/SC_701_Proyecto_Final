@@ -4,6 +4,7 @@ using System.Text;
 using P.DAL.EF;
 using data = P.DAL.DO.Objects;
 using P.DAL;
+using dal = P.DAL;
 using System.Threading.Tasks;
 using P.DAL.DO.Interfaces;
 
@@ -11,11 +12,11 @@ namespace P.BS
 {
     public class Canton : ICRUD<data.Canton>
     {
-        private Canton context;
+        private dal.Canton context;
 
         public Canton(CalculoMateContext _context)
         {
-            context = new Canton(_context);
+            context = new dal.Canton(_context);
         }
         public void Delete(data.Canton t)
         {

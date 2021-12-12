@@ -5,17 +5,18 @@ using P.DAL.DO.Interfaces;
 using P.DAL.EF;
 using data = P.DAL.DO.Objects;
 using P.DAL;
+using dal = P.DAL;
 using System.Threading.Tasks;
 
 namespace P.BS
 {
     public class Cliente : ICRUD<data.Cliente>
     {
-        private Cliente context;
+        private dal.Cliente context;
 
         public Cliente(CalculoMateContext _context)
         {
-            context = new Cliente(_context);
+            context = new dal.Cliente(_context);
         }
 
         public void Delete(data.Cliente t)

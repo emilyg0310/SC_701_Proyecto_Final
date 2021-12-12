@@ -20,14 +20,14 @@ namespace API.Controllers
             _context = context;
         }
 
-        // GET: api/MediPareds
+        // GET: api/MediPared
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MediPared>>> GetMediPared()
         {
             return await _context.MediPared.ToListAsync();
         }
 
-        // GET: api/MediPareds/5
+        // GET: api/MediPared/5
         [HttpGet("{id}")]
         public async Task<ActionResult<MediPared>> GetMediPared(int id)
         {
@@ -41,7 +41,7 @@ namespace API.Controllers
             return mediPared;
         }
 
-        // PUT: api/MediPareds/5
+        // PUT: api/MediPared/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
@@ -73,7 +73,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        // POST: api/MediPareds
+        // POST: api/MediPared
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
@@ -85,7 +85,7 @@ namespace API.Controllers
             return CreatedAtAction("GetMediPared", new { id = mediPared.IdMedPared }, mediPared);
         }
 
-        // DELETE: api/MediPareds/5
+        // DELETE: api/MediPared/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<MediPared>> DeleteMediPared(int id)
         {

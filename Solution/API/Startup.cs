@@ -25,6 +25,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSwaggerGen();
+
             services.AddControllers();
         }
 
@@ -35,11 +36,10 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseSwagger();
 
             app.UseSwaggerUI();
-
+                        
             app.UseRouting();
 
             app.UseAuthorization();
