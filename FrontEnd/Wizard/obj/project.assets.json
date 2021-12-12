@@ -8476,19 +8476,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emily\\.nuget\\packages\\": {}
+    "C:\\Users\\KevinOcampo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\ProyectoFinal\\FrontEnd\\Wizard\\Wizard.csproj",
+      "projectUniqueName": "C:\\gits\\PrograAvan\\FrontEnd\\Wizard\\Wizard.csproj",
       "projectName": "Wizard",
-      "projectPath": "C:\\Git\\ProyectoFinal\\FrontEnd\\Wizard\\Wizard.csproj",
-      "packagesPath": "C:\\Users\\emily\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\ProyectoFinal\\FrontEnd\\Wizard\\obj\\",
+      "projectPath": "C:\\gits\\PrograAvan\\FrontEnd\\Wizard\\Wizard.csproj",
+      "packagesPath": "C:\\Users\\KevinOcampo\\.nuget\\packages\\",
+      "outputPath": "C:\\gits\\PrograAvan\\FrontEnd\\Wizard\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\emily\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KevinOcampo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8557,7 +8562,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

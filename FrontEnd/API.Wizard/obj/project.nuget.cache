@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "We9pSvCuvfcEaIKxM4V6zAt1t2su9W3A0KykHqv/EVF19OH/6SVVtqa1zogB3FJzoaZLQLrJT3G5RLp0PJTkTA==",
+  "dgSpecHash": "g02AKqm2BAqo19rfORiTh33MYl79PbaZHncebg+lhDMOfMy9tJWIe5H2q0fyDq1DZmHwRMz5iNk3BqjU76rSDQ==",
   "success": true,
-  "projectFilePath": "C:\\Git\\ProyectoFinal\\FrontEnd\\API.Wizard\\API.Wizard.csproj",
+  "projectFilePath": "C:\\gits\\PrograAvan\\FrontEnd\\API.Wizard\\API.Wizard.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\emily\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\KevinOcampo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

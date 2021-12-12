@@ -247,7 +247,6 @@ C:\gits\prograavnaza\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.MvcApplication
 C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.csproj.AssemblyReference.cache
 C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Git\ProyectoFinal\Solution\P.API\obj\Debug\netcoreapp3.1\P.API.MvcApplicationPartsAssemblyInfo.cs
-C:\gits\PrograAvan\Solution\P.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\gits\PrograAvan\Solution\P.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\gits\PrograAvan\Solution\P.API\bin\Debug\netcoreapp3.1\P.API.exe
 C:\gits\PrograAvan\Solution\P.API\bin\Debug\netcoreapp3.1\P.API.deps.json
