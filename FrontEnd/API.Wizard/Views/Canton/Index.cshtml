@@ -4,19 +4,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Listado de Cantones</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear Nuevo</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.NombreCanton)
+                Código Provincia
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CodigoProvinciaNavigation)
+                Nombre de Cantón
             </th>
             <th></th>
         </tr>
@@ -32,9 +32,9 @@
                     @Html.DisplayFor(modelItem => item.CodigoProvinciaNavigation.NombreProvincia)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.CodigoCanton">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.CodigoCanton">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.CodigoCanton">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.CodigoCanton">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.CodigoCanton">Detalles</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CodigoCanton">Eliminar</a>
                 </td>
             </tr>
         }

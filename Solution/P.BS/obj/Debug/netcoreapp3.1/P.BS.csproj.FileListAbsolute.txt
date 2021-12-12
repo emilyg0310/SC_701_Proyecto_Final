@@ -80,3 +80,12 @@ C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
 C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.pdb
 C:\Git\ProyectoFinal\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.Repository.pdb
 C:\Git\ProyectoFinal\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.csproj.CopyComplete
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.DO.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.EF.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.Repository.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.DO.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.EF.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\bin\Debug\netcoreapp3.1\P.DAL.Repository.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.BS\obj\Debug\netcoreapp3.1\P.BS.csproj.CopyComplete

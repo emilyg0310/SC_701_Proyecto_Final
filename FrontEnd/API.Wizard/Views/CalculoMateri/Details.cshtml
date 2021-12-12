@@ -4,39 +4,39 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Detalle</h1>
 
 <div>
-    <h4>CalculoMateri</h4>
+    <h4>Cálculo de Materiales</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.TotalCalculo)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.TotalCalculo)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IdCalculoNavigation)
+            Nombre Cálculo
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.IdCalculoNavigation.NombreCalculo)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IdMaterialNavigation)
+            Material
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.IdMaterialNavigation.NombreMaterial)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IdMedParedesNavigation)
+            ID Paredes
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.IdMedParedesNavigation.IdMedParedes)
         </dd>
+        <dt class="col-sm-2">
+            Total Cálculo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalCalculo)
+        </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.IdCalMateri">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.IdCalMateri">Editar</a> |
+    <a asp-action="Index">Volver a la Lista</a>
 </div>

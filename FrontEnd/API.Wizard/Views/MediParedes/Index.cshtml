@@ -4,22 +4,22 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Medidas de Paredes</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear Nuevo</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TotalAlto)
+                Total Alto
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TotalAncho)
+                Total Ancho
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TotalMetroCuadrado)
+                Total Metros Cuadrados
             </th>
             <th></th>
         </tr>
@@ -38,9 +38,9 @@
                     @Html.DisplayFor(modelItem => item.TotalMetroCuadrado)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.IdMedParedes">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.IdMedParedes">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.IdMedParedes">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.IdMedParedes">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdMedParedes">Detalle</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdMedParedes">Eliminar</a>
                 </td>
             </tr>
         }
