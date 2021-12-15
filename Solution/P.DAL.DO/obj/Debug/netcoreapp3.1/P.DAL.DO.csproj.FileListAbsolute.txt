@@ -61,4 +61,3 @@ C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.csproj.Cor
 C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.dll
 C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.pdb
 C:\gits\PrograAvan\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.genruntimeconfig.cache
-C:\Git\ProyectoFinal\Solution\P.DAL.DO\obj\Debug\netcoreapp3.1\P.DAL.DO.csproj.AssemblyReference.cache

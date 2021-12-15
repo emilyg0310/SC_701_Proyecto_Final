@@ -48,7 +48,6 @@ C:\Git\ProyectoFinal\FrontEnd\Wizard\bin\Debug\netcoreapp3.1\runtimes\win-x86\na
 C:\Git\ProyectoFinal\FrontEnd\Wizard\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Git\ProyectoFinal\FrontEnd\Wizard\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Git\ProyectoFinal\FrontEnd\Wizard\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Git\ProyectoFinal\FrontEnd\Wizard\obj\Debug\netcoreapp3.1\Wizard.csproj.AssemblyReference.cache
 C:\Git\ProyectoFinal\FrontEnd\Wizard\obj\Debug\netcoreapp3.1\Wizard.GeneratedMSBuildEditorConfig.editorconfig
 C:\Git\ProyectoFinal\FrontEnd\Wizard\obj\Debug\netcoreapp3.1\Wizard.AssemblyInfoInputs.cache
 C:\Git\ProyectoFinal\FrontEnd\Wizard\obj\Debug\netcoreapp3.1\Wizard.AssemblyInfo.cs
