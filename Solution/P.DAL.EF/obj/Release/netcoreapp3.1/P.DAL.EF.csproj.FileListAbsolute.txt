@@ -1,0 +1,15 @@
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\bin\Release\netcoreapp3.1\P.DAL.EF.deps.json
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\bin\Release\netcoreapp3.1\P.DAL.EF.runtimeconfig.json
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\bin\Release\netcoreapp3.1\P.DAL.EF.runtimeconfig.dev.json
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\bin\Release\netcoreapp3.1\P.DAL.EF.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\bin\Release\netcoreapp3.1\P.DAL.EF.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\bin\Release\netcoreapp3.1\P.DAL.DO.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\bin\Release\netcoreapp3.1\P.DAL.DO.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.csproj.AssemblyReference.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.AssemblyInfo.cs
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.csproj.CopyComplete
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.dll
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.pdb
+C:\Users\Asus\Documents\SC_701_Proyecto_Final\Solution\P.DAL.EF\obj\Release\netcoreapp3.1\P.DAL.EF.genruntimeconfig.cache

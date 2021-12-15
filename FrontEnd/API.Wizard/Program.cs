@@ -11,7 +11,7 @@ namespace API.Wizard
 {
     public class Program
     {
-        public static string baseurl = "http://localhost:47662";
+        public static string baseurl = "https://beproyectoprogra.azurewebsites.net";
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
