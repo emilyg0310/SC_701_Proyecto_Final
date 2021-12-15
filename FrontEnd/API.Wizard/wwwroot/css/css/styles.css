@@ -11339,9 +11339,9 @@ p.lead {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-#sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
-}
+    #sideNav .navbar-toggler:focus {
+        outline-color: #ace4cc;
+    }
 
 @media (min-width: 992px) {
   #sideNav {

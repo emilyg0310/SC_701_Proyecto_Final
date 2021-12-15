@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj": {}
+    "C:\\gits\\PrograAvan\\Solution\\P.BS\\P.BS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj": {
+    "C:\\gits\\PrograAvan\\Solution\\P.BS\\P.BS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj",
+        "projectUniqueName": "C:\\gits\\PrograAvan\\Solution\\P.BS\\P.BS.csproj",
         "projectName": "P.BS",
-        "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\P.BS.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.BS\\obj\\",
+        "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.BS\\P.BS.csproj",
+        "packagesPath": "C:\\Users\\KevinOcampo\\.nuget\\packages\\",
+        "outputPath": "C:\\gits\\PrograAvan\\Solution\\P.BS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KevinOcampo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +32,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
+              "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
+                "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
               },
-              "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj"
+              "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
+                "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj"
               },
-              "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj"
+              "C:\\gits\\PrograAvan\\Solution\\P.DAL\\P.DAL.csproj": {
+                "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL\\P.DAL.csproj"
               }
             }
           }
@@ -86,21 +90,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
+    "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj",
+        "projectUniqueName": "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj",
         "projectName": "P.DAL.DO",
-        "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\obj\\",
+        "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj",
+        "packagesPath": "C:\\Users\\KevinOcampo\\.nuget\\packages\\",
+        "outputPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KevinOcampo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,21 +170,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
+    "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj",
+        "projectUniqueName": "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj",
         "projectName": "P.DAL.EF",
-        "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\obj\\",
+        "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj",
+        "packagesPath": "C:\\Users\\KevinOcampo\\.nuget\\packages\\",
+        "outputPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KevinOcampo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,8 +202,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
+              "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
+                "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
               }
             }
           }
@@ -242,21 +254,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj": {
+    "C:\\gits\\PrograAvan\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj",
+        "projectUniqueName": "C:\\gits\\PrograAvan\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj",
         "projectName": "P.DAL.Repository",
-        "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.Repository\\obj\\",
+        "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj",
+        "packagesPath": "C:\\Users\\KevinOcampo\\.nuget\\packages\\",
+        "outputPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KevinOcampo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -270,8 +286,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.EF\\P.DAL.EF.csproj"
+              "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj": {
+                "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.EF\\P.DAL.EF.csproj"
               }
             }
           }
@@ -322,21 +338,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj": {
+    "C:\\gits\\PrograAvan\\Solution\\P.DAL\\P.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj",
+        "projectUniqueName": "C:\\gits\\PrograAvan\\Solution\\P.DAL\\P.DAL.csproj",
         "projectName": "P.DAL",
-        "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\P.DAL.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL\\obj\\",
+        "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL\\P.DAL.csproj",
+        "packagesPath": "C:\\Users\\KevinOcampo\\.nuget\\packages\\",
+        "outputPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KevinOcampo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -350,11 +370,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
+              "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj": {
+                "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.DO\\P.DAL.DO.csproj"
               },
-              "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Documents\\SC_701_Proyecto_Final\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj"
+              "C:\\gits\\PrograAvan\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj": {
+                "projectPath": "C:\\gits\\PrograAvan\\Solution\\P.DAL.Repository\\P.DAL.Repository.csproj"
               }
             }
           }
@@ -405,7 +425,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
